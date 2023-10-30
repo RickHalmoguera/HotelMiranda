@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 10px;
+}
+
+.header {
+  font-family: "Archivo", sans-serif;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+}
+.header__btn {
+  font-size: 2.4rem;
+}
+.header__btns {
+  display: flex;
+  gap: 1em;
+  margin-left: auto;
+}
+
+.logo {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.logo__span {
+  font-size: 2rem;
+  height: 3.6rem;
+  width: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+}
+.logo__p {
+  font-weight: 400;
+}
+
+.home {
+  padding: 8em 1em;
+  background-color: #333;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-image: url("../images/home.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+}
+.home::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.home__p {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+  letter-spacing: 2.8px;
+  font-size: 1.3rem;
+}
+.home__h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+}
+.home__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.home__btn--light {
+  width: 21.7rem;
+  height: 6rem;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #BEAD8E;
+  border: none;
+}
+.home__btn {
+  width: 21.7rem;
+  height: 6rem;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.calendar {
+  padding: 2em 1em;
+  background-color: #222;
+  margin-bottom: 6rem;
+}
+.calendar__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.calendar__label {
+  font-family: "Roboto", sans-serif;
+  color: #FFF;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.calendar__input {
+  padding: 0.3em;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  background-color: transparent;
+  color: #686868;
+  font-size: 1.4rem;
+}
+
+.about__header {
+  background-image: url(../images/discover.jpg);
+  padding: 4em 1em 15em 1em;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  z-index: 0;
+  position: relative;
+}
+.about__header::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-shadow: inset 16px 14px 39px 21px #FFFFFF;
+}
+.about__h3 {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.about__h1 {
+  color: #111;
+  font-family: "Old Standard TT", serif;
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+}
+.about__p {
+  color: #777;
+  font-size: 1.4rem;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.about__btn {
+  width: 21.7rem;
+  height: 6rem;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #BEAD8E;
+  border: none;
+}
+.about__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__card, .cards__card--text, .cards__card--textDark {
+  width: 100%;
+  height: 30rem;
+  max-width: 270px;
+}
+.cards__img {
+  width: 100%;
+  height: 30rem;
+}
+.cards__card--text, .cards__card--textDark {
+  padding: 5em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+  position: relative;
+  padding: 4em 1em;
+  margin-bottom: 6em;
+}
+.cards__icon {
+  width: 6.8rem;
+}
+.cards__icon--light {
+  width: 14.4rem;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.cards__h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Old Standard TT", serif;
+}
+.cards__p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 2.2rem;
+  text-align: center;
+}
+.cards__card--textDark {
+  background-color: #222;
+  color: #FFF;
+}
+
+.rooms {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.rooms__h3 {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.rooms__h1 {
+  color: #111;
+  font-family: "Old Standard TT", serif;
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+}
+
+.swiper {
+  width: 100%;
+  height: 24.4rem;
+  overflow: visible;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #F9F9F9;
+  --swiper-navigation-size: 12px;
+  --swiper-navigation-color: $font__color__dark;
+}
+
+.swiper-button-next {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #BEAD8E;
+  --swiper-navigation-size: 12px;
+  --swiper-navigation-color: $font__color__main;
+}
+
+.icons {
+  position: absolute;
+  top: -20px;
+  right: 50%;
+  transform: translate(50%);
+  background-color: #F9F9F9;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  z-index: 10;
+}/*# sourceMappingURL=style.css.map */

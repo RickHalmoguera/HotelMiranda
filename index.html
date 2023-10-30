@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Hotel Miranda</title>
+</head>
+<body>
+    <header class="header">
+        <i class='bx bx-menu header__btn'></i>
+        <div class="header__logo logo">
+            <span class="logo__span">H</span>
+            <div class="logo__text">
+                <strong class="logo__strong">hotel</strong>
+                <p class="logo__p">miranda</p>
+            </div>
+        </div>
+        <div class="header__btns">
+            <i class='bx bx-user header__btn'></i>
+            <i class='bx bx-search header__btn'></i>
+        </div>
+    </header>
+
+    <section class="home"> 
+        <div class="home__filter"></div>
+        <p class="home__p"> the ultimate luxury experience</>
+        <h1 class="home__h1">The Perfect Base For You</h1>
+        <div class="home__btns">
+            <button class="home__btn--light">take a tour</button>
+            <button class="home__btn">learn more</button>
+        </div>
+    </section>
+
+    <section class="calendar">
+        <form action="" class="calendar__form">
+            <label for="arrivalDate" class="calendar__label">Arrival Date</label>
+            <input type="date" name="arrival-date" id="arrivalDate" class="calendar__input">
+            <label for="departureDate" class="calendar__label">Departure Date</label>
+            <input type="date" name="departure-date" id="departureDate" class="calendar__input">
+        </form>
+    </section>
+
+    <section class="about">
+        <div class="about__header">
+            <h3 class="about__h3">about us</h3>
+            <h1 class="about__h1">Discover Our Underground.</h1>
+            <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <button class="about__btn">book now</button>
+        </div>
+
+        <div class="about__cards cards">
+            <div class="cards__card">  
+                <img src="./images/about1.jpg" alt="" class="cards__img">
+            </div>
+            <div class="cards__card--text">
+                <img src="./images/teamIcon.svg" alt="" class="cards__icon">
+                <img src="./images/teamIconShadow.svg" alt="" class="cards__icon--light">
+                <h2 class="cards__h2">Strong Team</h2>
+                <p class="cards__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit commodi pariatur eaque.</p>
+            </div>
+            <div class="cards__card">  
+                <img src="./images/about2.jpg " alt="" class="cards__img">
+            </div>
+            <div class="cards__card--textDark">
+                
+                <img src="./images/calendarIcon.svg" alt="" class="cards__icon">
+                <h2 class="cards__h2">Luxury Room</h2>
+                <p class="cards__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit commodi pariatur eaque.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms">
+        <h3 class="rooms__h3">rooms</h3>
+        <h1 class="rooms__h1">Hand Picked Rooms</h1>
+        <div class="swiper mySwiper">
+            <div class="icons">
+                <img src="./images/bed.svg" alt="">
+                <img src="./images/wifi.svg" alt="">
+                <img src="./images/parking.svg" alt="">
+                <img src="./images/snow.svg" alt="">
+                <img src="./images/gym.svg" alt="">
+                <img src="./images/smoking.svg" alt="">
+                <img src="./images/cocktail.svg" alt="">
+            </div>
+            
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/room1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/room2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/room3.jpg" alt="">
+              </div>
+            </div>
+    
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./javascript/script.js"></script>
+</html>
