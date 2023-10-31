@@ -26,7 +26,8 @@ $font__color__darkest:#111;
 
 
 .header{
-    
+    position: fixed;
+    width: 100%;
     &__p{
         display: none;
     }
@@ -34,7 +35,28 @@ $font__color__darkest:#111;
     &__container{
         width: 100%;
     }
+
+    &__ul{
+        display: none;
+        padding: 2em;
+        list-style: none;
+        
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1em;
+        
+    }
+
+    &__a{
+        text-decoration: none;
+        font-family: $font__family__main;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $font__color__darkest;
+    }
 }
+
+
 
 .nav{
     background-color: $bg__color__light;
@@ -47,15 +69,11 @@ $font__color__darkest:#111;
     gap: 2em;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
 
-    &__menu--open{
-        display: inline-block;
+    &__menuBtn{
+        width: 2rem;
     }
 
-    &__menu--close{
-        display: none;
-    }
-
-    &__links{
+    &__ul{
         display: none;
     }
 
@@ -124,10 +142,10 @@ $font__color__darkest:#111;
 
     .nav{
         gap: 6em;
-        &__menu--open{
+        &__menuBtn{
             display: none;
         }
-        &__links{
+        &__ul{
             display: flex;
             justify-content: space-between;
             gap: 1.2em;
