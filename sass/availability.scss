@@ -1,5 +1,8 @@
+$font__family__extra:'Roboto', sans-serif;
+$bg__color__darker: #222;
 $btn__color__dark:#BEAD8E;
 $font__color__light: #FFF;
+$font__color__dark:#686868;
 
 @mixin button{
     border: none;
@@ -18,16 +21,26 @@ $font__color__light: #FFF;
     display: flex;
     flex-direction: column;
     gap: 2em;
+    background-color:$bg__color__darker ;
 
     &__container{
         display: flex;
         flex-direction: column;
         gap: 1em;
+        font-family: $font__family__extra;
+        font-size: 1.6rem;
+        color: $font__color__light;
     }
 
     &__input{
+        min-width: 100%; 
         border: none;
         border-bottom: 2px solid $btn__color__dark;
+        background-color: $bg__color__darker;
+        color: $font__color__dark;
+        font-size: 1.4rem;
+        border-radius: 0;
+        
     }
 
     &__button{
@@ -35,4 +48,17 @@ $font__color__light: #FFF;
         background-color: $btn__color__dark;
     }
 
+}
+
+@media only screen and (min-width:1000px) {
+    
+    .availability{ 
+
+        flex-direction: row;
+        padding-left:  19%;
+        
+        &__container{
+            width: 33rem;
+        }
+    }
 }
