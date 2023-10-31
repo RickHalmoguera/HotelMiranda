@@ -1,0 +1,46 @@
+.nav {
+  background-color: #FFF;
+  color: #111;
+  font-family: "Archivo", sans-serif;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+}
+.nav__menuBtn {
+  width: 2rem;
+}
+.nav__ul {
+  display: none;
+}
+.nav__btn {
+  min-width: 2.4rem;
+  padding: 0.1em;
+  border: none;
+}
+.nav__btns {
+  display: flex;
+  gap: 2em;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav {
+    gap: 6em;
+  }
+  .nav__menuBtn {
+    display: none;
+  }
+  .nav__ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2em;
+    list-style: none;
+    font-size: 1.6rem;
+  }
+  .nav__btn {
+    border: 2px solid rgba(133, 133, 133, 0.3);
+  }
+}/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,57 @@
+$font__family__main:'Archivo', sans-serif;
+$bg__color__light:#FFF;
+$font__color__darkest:#111;
+
+.nav{
+    background-color: $bg__color__light;
+    color: $font__color__darkest;
+    font-family: $font__family__main;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+
+    &__menuBtn{
+        width: 2rem;
+    }
+
+    &__ul{
+        display: none;
+    }
+
+    &__btn{
+        min-width: 2.4rem;
+        padding: .1em;
+        border: none;
+    }
+
+    &__btns{
+        display: flex;
+        gap: 2em;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    
+
+    .nav{
+        gap: 6em;
+        &__menuBtn{
+            display: none;
+        }
+        &__ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 1.2em;
+            list-style: none;
+            font-size: 1.6rem;
+        }
+        &__btn{
+            border: 2px solid rgba(133, 133, 133, 0.30);
+        }
+    
+    }
+}

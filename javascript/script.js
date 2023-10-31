@@ -20,7 +20,4 @@ const handleMenu = () =>{
   }
 }
 
-const handleMenuOpen = ()=>{
-
-}
 menuBtn.addEventListener('click',handleMenu)
