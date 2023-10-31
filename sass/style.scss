@@ -5,6 +5,7 @@
 @import'./logo.scss';
 @import'./home.scss';
 @import'./availability.scss';
+@import'./about.scss';
 
 *{
     box-sizing: border-box;
@@ -21,7 +22,7 @@ $btn__color__dark:#BEAD8E;
 
 
 $font__family__main:'Archivo', sans-serif;
-$font__family__sec:'Old Standard TT', serif;
+$font__family__sec:'Old Standard TT', serif; 
 $font__family__extra:'Roboto', sans-serif;
 
 $font__color__light: #FFF;

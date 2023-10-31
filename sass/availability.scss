@@ -35,6 +35,7 @@ $font__color__dark:#686868;
     &__input{
         min-width: 100%; 
         border: none;
+        padding-bottom: .5em;
         border-bottom: 2px solid $btn__color__dark;
         background-color: $bg__color__darker;
         color: $font__color__dark;

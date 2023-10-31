@@ -1,0 +1,162 @@
+$bg__color__darker: #222;
+$font__color__light: #FFF;
+$font__color__darker:#777;
+$font__color__darkest:#111;
+$btn__color__dark:#BEAD8E;
+$font__family__main:'Archivo', sans-serif;
+$font__family__extra:'Roboto', sans-serif;
+$font__family__sec:'Old Standard TT', serif; 
+
+@mixin button{
+    border: none;
+    width: 22rem;
+    height: 6rem;
+    color: $font__color__light;
+    font-family: $font__family__main;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+}
+
+.about{
+    padding: 6em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+
+    &__text{
+        background-image: url(../images/discover.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__text::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        box-shadow: inset 20px 26px 40px 60px #FFF;
+    }   
+    &__h3{
+        color: $font__color__darker;
+        font-family: $font__family__main;
+        font-size: 1.3rem;
+        font-weight: 700;
+        line-height: 1.8rem; 
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+    }
+
+    &__h1{
+        max-width: 32rem;
+        color: $font__color__darkest;
+        font-family: $font__family__sec;
+        font-size: 5.6rem;
+        font-weight: 400;
+        line-height: 6rem; 
+        letter-spacing: -1.2px;
+    }
+
+    &__p--long{
+        max-width: 33rem;
+        color: $font__color__darker;
+        font-family: $font__family__main;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.4rem;
+    }
+
+    &__button{
+        @include button();
+        background-color: $btn__color__dark;
+    }
+    
+    &__cardsContainer{
+        width: 27rem;
+    }
+
+    &__card{
+        height: 30rem;
+    }
+
+    &__card--text, &__card--textDark{
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        position: relative;
+        text-align: center;
+    }
+
+    
+    &__icon{
+        width: 6.8rem;
+    }
+    
+    &__icon--shadow{
+        position: absolute;
+        top: 5em;
+        right: 0;
+        width: 14.4rem;
+        z-index: -1;
+    }
+
+    &__h2{
+        color: $font__color__darkest;
+        font-family:  $font__family__sec;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: -0.9px;
+    }
+
+    &__h2--light{
+        color: $font__color__light;
+        font-family:  $font__family__sec;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: -0.9px;
+    }
+    
+    &__p{
+        max-width: 19rem;
+        color: $font__color__darkest;
+        font-family: $font__family__extra;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+    }
+
+    &__p--light{
+        max-width: 19rem;
+        color:$font__color__light;
+        font-family: $font__family__extra;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+    }
+    
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__card--textDark{
+        background-color: $bg__color__darker;
+    }
+}
