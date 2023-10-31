@@ -1,7 +1,3 @@
-let swiper = new Swiper(".mySwiper", {
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+
+const menuBtnOpen = document.getElementById("menuBtnOpen")
+const menuBtnClose = document.getElementById("menuBtnClose")
