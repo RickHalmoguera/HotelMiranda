@@ -4,13 +4,13 @@
 @import'./nav.scss';
 @import'./logo.scss';
 @import'./home.scss';
+@import'./availability.scss';
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 html{font-size: 10px;}
 
 $bg__color__dark:#333;

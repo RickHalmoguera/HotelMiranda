@@ -1,0 +1,9 @@
+.availability {
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+}
+.availability__input {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=availability.css.map */
