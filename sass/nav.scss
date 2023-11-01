@@ -1,6 +1,4 @@
-$font__family__main:'Archivo', sans-serif;
-$bg__color__light:#FFF;
-$font__color__darkest:#111;
+@import './variables.scss';
 
 .nav{
     background-color: $bg__color__light;

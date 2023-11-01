@@ -1,12 +1,4 @@
-$bg__color__darker: #222;
-$font__color__light: #FFF;
-$font__color__darker:#777;
-$font__color__darkest:#111;
-$btn__color__dark:#BEAD8E;
-$font__family__main:'Archivo', sans-serif;
-$font__family__extra:'Roboto', sans-serif;
-$font__family__sec:'Old Standard TT', serif; 
-
+@import './variables.scss';
 @mixin button{
     border: none;
     width: 22rem;
@@ -83,7 +75,7 @@ $font__family__sec:'Old Standard TT', serif;
     }
     
     &__cardsContainer{
-        width: 27rem;
+        min-width: 27rem;
     }
 
     &__card{
@@ -109,7 +101,8 @@ $font__family__sec:'Old Standard TT', serif;
     &__icon--shadow{
         position: absolute;
         top: 5em;
-        right: 0;
+        right: 50%;
+        transform: translate(90%);
         width: 14.4rem;
         z-index: -1;
     }
@@ -159,4 +152,64 @@ $font__family__sec:'Old Standard TT', serif;
     &__card--textDark{
         background-color: $bg__color__darker;
     }
+}
+
+@media only screen and (min-width:1000px) {
+    .about{
+        background-image: url(../images/discover.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        z-index: 0;
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            box-shadow: inset 20px 26px 40px 60px #FFF;
+        }
+
+        &__text{
+            background: transparent;
+            order: 2;
+        }
+
+        &__text::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            box-shadow: none;
+        }   
+
+        &__cardsContainer{
+            width: 57rem;
+            display: flex;
+            gap: 2em;
+        }
+
+        &__column--left{
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2em;
+        }
+
+        &__column--right{
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+        }
+    }
+
 }

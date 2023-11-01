@@ -1,7 +1,4 @@
-$font__family__main:'Archivo', sans-serif;
-$font__family__sec:'Old Standard TT', serif;
-$font__color__light: #FFF;
-$btn__color__dark:#BEAD8E;
+@import './variables.scss';
 
 @mixin button{
     border: none;
@@ -22,7 +19,7 @@ $btn__color__dark:#BEAD8E;
     gap: 2em;
     background-image: url(../images/home.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     padding: 18em 2em 10em 2em;
     position: relative;
     z-index: 0;

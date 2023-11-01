@@ -1,9 +1,4 @@
-$font__family__main:'Archivo', sans-serif;
-$font__family__extra:'Roboto', sans-serif;
-$bg__color__light:#FFF;
-$bg__color__dark:#333;
-$font__color__light: #FFF;
-$font__color__darkest:#111;
+@import './variables.scss';
 
 .header{
     position: fixed;

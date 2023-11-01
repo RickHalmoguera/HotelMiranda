@@ -20,4 +20,26 @@ const handleMenu = () =>{
   }
 }
 
+let swiper = new Swiper(".rooms__swiper", {
+ autoplay:{
+  delay:3000
+ },
+ loop: true,   
+  slidesPerView: 1,
+  spaceBetween: 20,                   
+  pagination: {
+      el: '.swiper-pagination',
+  },                  
+  navigation: {                       
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },    
+  breakpoints: {
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    }
+  }                     
+});
+
 menuBtn.addEventListener('click',handleMenu)

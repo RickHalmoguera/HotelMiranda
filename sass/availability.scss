@@ -1,8 +1,4 @@
-$font__family__extra:'Roboto', sans-serif;
-$bg__color__darker: #222;
-$btn__color__dark:#BEAD8E;
-$font__color__light: #FFF;
-$font__color__dark:#686868;
+@import './variables.scss';
 
 @mixin button{
     border: none;

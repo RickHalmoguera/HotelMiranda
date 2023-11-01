@@ -73,28 +73,108 @@
             <button class="about__button">book now</button>
         </div>
         <div class="about__cardsContainer">
-            <div class="about__card">
-                <img class="about__img" src="./images/about1.jpg" alt="">
+            <div class="about__column--left">
+                <div class="about__card">
+                    <img class="about__img" src="./images/about1.jpg" alt="">
+                </div>
+                <div class="about__card--text">
+                    <img class="about__icon" src="./icons/teamIcon.svg" alt="">
+                    <img class="about__icon--shadow" src="./icons/teamIconShadow.svg" alt="">
+                    <h2 class="about__h2">Strong Team</h2>
+                    <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor.
+                    </p>
+                </div>
             </div>
-            <div class="about__card--text">
-                <img class="about__icon" src="./icons/teamIcon.svg" alt="">
-                <img class="about__icon--shadow" src="./icons/teamIconShadow.svg" alt="">
-                <h2 class="about__h2">Strong Team</h2>
-                <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor.
-                </p>
-            </div>
-            <div class="about__card">
-                <img class="about__img" src="./images/about2.jpg" alt="">
-            </div>
-            <div class="about__card--textDark">
-                <img src="./icons/calendarIcon.svg" alt="">
-                <h2 class="about__h2--light">Luxury Room</h2>
-                <p class="about__p--light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor.
-                </p>
+
+            <div class="about__column--right">
+                <div class="about__card">
+                    <img class="about__img" src="./images/about2.jpg" alt="">
+                </div>
+                <div class="about__card--textDark">
+                    <img src="./icons/calendarIcon.svg" alt="">
+                    <h2 class="about__h2--light">Luxury Room</h2>
+                    <p class="about__p--light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                        sed do eiusmod tempor.
+                    </p>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section class="rooms">
+        <h3 class="rooms__h3">rooms</h3>
+        <h2 class="rooms__h2">Hand Picked Rooms</h2>
+        <div class="rooms__icons">
+            <img src="./icons/bed.svg" alt="bed">
+            <img src="./icons/wifi.svg" alt="wifi">
+            <img src="./icons/parking.svg" alt="parking">
+            <img src="./icons/cold.svg" alt="air conditioner">
+            <img src="./icons/gym.svg" alt="gym">
+            <img src="./icons/smoking.svg" alt="no smoking">
+            <img src="/icons/cocktail.svg" alt="minibar">
+        </div>
+
+        <div class="swiper rooms__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="rooms__img" src="./images/room1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="rooms__img" src="./images/room2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="rooms__img" src="./images/room3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="rooms__img" src="./images/room1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="rooms__img" src="./images/room2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="rooms__img" src="./images/room3.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next rooms__button--next"></div>
+            <div class="swiper-button-prev rooms__button--prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="rooms__description">
+            <div class="rooms__text">
+                <h2 class="rooms__h2">Minimal Duplex Room</h2>
+                <p class="rooms__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="rooms__price">
+                <strong class="rooms__strong">$345 <span class="rooms__span">/Night</span></strong>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="video__wrapper">
+            <div class="video__text">
+                <h3 class="video__h3">intro video</h3>
+                <h1 class="video__h1">Meet With Our Luxury Place</h1>
+                <p class="video__p">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
+                </p>
+            </div>
+            <iframe 
+                class="video__frame" 
+                src="https://www.youtube.com/embed/Bu3Doe45lcU?si=YyHcLktKvbtLVTuP&amp;clip=UgkxJ325RzPJxDLLco-zBbik_Ev0zbf8sqy8&amp;clipt=EKjDARj4yQQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+    
+            <button class="video__button">book now</button>
+        </div>
+
+
     </section>
 
 
