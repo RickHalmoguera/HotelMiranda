@@ -20,7 +20,7 @@ const handleMenu = () =>{
   }
 }
 
-let swiper = new Swiper(".rooms__swiper", {
+let swiperRooms = new Swiper(".rooms__swiper", {
  autoplay:{
   delay:3000
  },
@@ -40,6 +40,29 @@ let swiper = new Swiper(".rooms__swiper", {
       spaceBetween: 20
     }
   }                     
+});
+
+let swiperFacilities = new Swiper(".facilities__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    1000:{
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    }
+  }
 });
 
 menuBtn.addEventListener('click',handleMenu)

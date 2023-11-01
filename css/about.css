@@ -69,6 +69,7 @@
 }
 .about__card {
   height: 30rem;
+  width: 100%;
 }
 .about__card--text, .about__card--textDark {
   height: 30rem;
