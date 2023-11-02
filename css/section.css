@@ -1,0 +1,105 @@
+.section {
+  background-image: url("../images/home.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 5em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  z-index: 0;
+  position: relative;
+}
+.section::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.section__h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.section__h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+}
+.section__button--dark {
+  width: 21rem;
+  height: 6rem;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: #BEAD8E;
+  border: none;
+}
+.section__button--light {
+  width: 21rem;
+  height: 6rem;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+  margin-bottom: 5em;
+}
+.section__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.section__input {
+  background: transparent;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #686868;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  padding-bottom: 0.5em;
+}
+.section__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section--small {
+  padding: 5em 2em;
+  background: #222;
+  gap: 2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .section {
+    padding: 10em 20%;
+  }
+  .section__input {
+    width: 30rem;
+  }
+  .section--small {
+    padding: 5em 0 5em 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #222;
+    gap: 2em;
+  }
+}/*# sourceMappingURL=section.css.map */

@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .nav{
+    background-color: $bg__color__light;
     display: flex;
     align-items: center;
     gap: 1em;
@@ -8,6 +9,7 @@
     font-family:$font__family--main;
     color: $__font__color--darkest;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+    z-index: 10;
     
     &__icon{
         width: 1.6rem;
@@ -52,10 +54,11 @@
 
     &__ul--row{
        display: none;
-
     }
 
     &__ul--column{
+        position: absolute;
+        width: 100%;
         display: none;
         flex-direction: column;
         gap: 1em;
@@ -76,3 +79,20 @@
     }
 
 }    
+
+@media only screen and (min-width:1000px){
+    .nav{
+       width: 100%;
+
+       &__icon{
+        display: none;
+       }
+        &__ul--row{
+            display: flex;
+            gap: 1em;
+
+            list-style: none;
+        }
+    
+    }
+}

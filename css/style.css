@@ -1,23 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
-.header {
+.header__p {
   display: none;
 }
 
 @media only screen and (min-width: 1000px) {
   .header {
-    display: block;
+    padding: 1em 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     width: 100%;
-    height: 10rem;
+    height: 8rem;
     background-color: #222;
     color: #FFF;
     font-family: "Roboto", sans-serif;
+    text-align: left;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    position: relative;
+  }
+  .header__p {
+    display: block;
   }
 }
 .nav {
+  background-color: #FFF;
   display: flex;
   align-items: center;
   gap: 1em;
@@ -25,6 +34,7 @@
   font-family: "Archivo", sans-serif;
   color: #111;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
+  z-index: 10;
 }
 .nav__icon {
   width: 1.6rem;
@@ -64,6 +74,8 @@
   display: none;
 }
 .nav__ul--column {
+  position: absolute;
+  width: 100%;
   display: none;
   flex-direction: column;
   gap: 1em;
@@ -81,6 +93,124 @@
   margin-left: auto;
 }
 
+@media only screen and (min-width: 1000px) {
+  .nav {
+    width: 100%;
+  }
+  .nav__icon {
+    display: none;
+  }
+  .nav__ul--row {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+  }
+}
+.section {
+  background-image: url("../images/home.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 5em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  z-index: 0;
+  position: relative;
+}
+.section::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.section__h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.section__h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+}
+.section__button--dark {
+  width: 21rem;
+  height: 6rem;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: #BEAD8E;
+  border: none;
+}
+.section__button--light {
+  width: 21rem;
+  height: 6rem;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: transparent;
+  margin-bottom: 5em;
+}
+.section__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.section__input {
+  background: transparent;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #686868;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  padding-bottom: 0.5em;
+}
+.section__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section--small {
+  padding: 5em 2em;
+  background: #222;
+  gap: 2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .section {
+    padding: 10em 20%;
+  }
+  .section__input {
+    width: 30rem;
+  }
+  .section--small {
+    padding: 5em 0 5em 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #222;
+    gap: 2em;
+  }
+}
 html {
   font-size: 10px;
 }
