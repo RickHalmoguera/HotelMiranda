@@ -1,38 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-@import './header.scss';
-@import'./nav.scss';
-@import'./logo.scss';
-@import'./home.scss';
-@import'./availability.scss';
-@import'./about.scss';
-@import'./rooms.scss';
-@import'./video.scss';
-@import'./facilities.scss';
+@import "./header.scss";
+@import "./nav.scss";
 
-*{
+html{
+    font-size: 10px;
+}
+* { 
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
-
-html{font-size: 10px;}
-
-$bg__color__dark:#333;
-$bg__color__darker: #222;
-$bg__color__light:#FFF;
-
-$btn__color__dark:#BEAD8E;
-
-
-$font__family__main:'Archivo', sans-serif;
-$font__family__sec:'Old Standard TT', serif; 
-$font__family__extra:'Roboto', sans-serif;
-
-$font__color__light: #FFF;
-$font__color__dark:#686868;
-$font__color__darker:#777;
-$font__color__darkest:#111;
-
-
-
+body { min-width: 320px }
+   

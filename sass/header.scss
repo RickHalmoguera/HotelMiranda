@@ -1,60 +1,23 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .header{
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    &__p{
-        display: none;
-    }
-
-    &__container{
-        width: 100%;
-    }
-
-    &__ul{
-        display: none;
-        padding: 2em;
-        list-style: none;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1em;
-        background-color: $bg__color__light;
-    }
-
-    &__a{
-        text-decoration: none;
-        font-family: $font__family__main;
-        font-size: 1.6rem;
-        font-weight: 600;
-        color: $font__color__darkest;
-    }
+    display: none;
 }
 
-@media only screen and (min-width:1000px) {
-
+@media only screen and (min-width:1000px){
     .header{
+        display: block;
         width: 100%;
         height: 10rem;
-        position: relative;
-        background-color:$bg__color__dark;
-
-      
-        &__p{
-            display: block;
-            margin:.5em 0;
-            font-family: $font__family__extra;
-            font-size: 1.6rem;
-            font-weight: 400;
-            color: $font__color__light;
-        }
-    
-        &__container{
-            position: absolute;
-            top: 0;
-            right: 50%;
-            transform: translate(50%,);
-            width: 74%;
-        }
+        background-color:$bg__color--dark;
+        color: $font__color--light;
+        font-family: $font__family--extra;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
+
+
+

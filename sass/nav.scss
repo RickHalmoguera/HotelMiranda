@@ -1,55 +1,78 @@
 @import './variables.scss';
 
 .nav{
-    background-color: $bg__color__light;
-    color: $font__color__darkest;
-    font-family: $font__family__main;
-    padding: 2em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2em;
+    gap: 1em;
+    padding: 1em;
+    font-family:$font__family--main;
+    color: $__font__color--darkest;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
-
-    &__menuBtn{
-        width: 2rem;
+    
+    &__icon{
+        width: 1.6rem;
     }
 
-    &__ul{
+    &__container--flex{
+        display: flex;
+        gap: .3em;
+    }
+
+    &__container--square{
+        width: 3.6rem;
+        height: 3.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
+    }
+    
+    &__p--big{
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__container--flexColumn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.3rem;
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+    }
+    
+    &__p--dark{
+        font-weight: 700;
+    }
+
+    &__p--light{
+        font-weight: 400;
+    }
+
+    &__ul--row{
+       display: none;
+
+    }
+
+    &__ul--column{
         display: none;
+        flex-direction: column;
+        gap: 1em;
+        padding: 2em 1em;
+        background-color: $bg__color__light;
     }
 
-    &__btn{
-        min-width: 2.4rem;
-        padding: .1em;
-        border: none;
-    }
+    &__li{
+        font-family:$font__family--main;
+        font-size: 1.6rem;
+        font-weight: 600;
+    } 
 
-    &__btns{
+    &__container--icons{
         display: flex;
         gap: 2em;
         margin-left: auto;
     }
-}
 
-@media only screen and (min-width:1000px) {
-    
-
-    .nav{
-        gap: 6em;
-        &__menuBtn{
-            display: none;
-        }
-        &__ul{
-            display: flex;
-            justify-content: space-between;
-            gap: 1.2em;
-            list-style: none;
-            font-size: 1.6rem;
-        }
-        &__btn{
-            border: 2px solid rgba(133, 133, 133, 0.30);
-        }
-    
-    }
-}
+}    

@@ -8,234 +8,37 @@
     <title>Hotel Miranda</title>
 </head>
 <body>
-     <header class="header">
-        <div class="header__container">
-            <p class="header__p">We Make Your Feel Comfortable</p> 
-            <nav class="header__nav nav">
-    
-                <img class="nav__menuBtn" src="./icons/Menu.svg" alt="Menu" id="menuBtn">
-                <div class="nav__logo logo">
-                    <p class="logo__span">H</p>
-                    <div class="logo__text">
-                        <strong class="logo__strong">hotel</strong>
-                        <p class="logo__p">miranda</p>
-                    </div>
-                </div>
-                <ul class="nav__ul">
-                    <li><a class="header__a" href="#about">About Us</a></li>
-                    <li><a class="header__a" href="#rooms">Rooms</a></li>
-                    <li><a class="header__a" href="#offers">Offers</a></li>
-                    <li><a class="header__a" href="#contact">Contact</a></li>
-                </ul>
-                <div class="nav__btns">
-                    <img class="nav__btn" src="./icons/user.svg" alt="User">
-                    <img class="nav__btn" src="./icons/search.svg" alt="Search">
-                </div>
-            </nav>
-            <ul class="header__ul" id="headerUl">
-                <li><a class="header__a" href="#about">About Us</a></li>
-                <li><a class="header__a" href="#rooms">Rooms</a></li>
-                <li><a class="header__a" href="#offers">Offers</a></li>
-                <li><a class="header__a"href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <header class="header">
+        <p class="header__p">We Make Your Feel Comfortable</p>
     </header>
-
-    <section class="home">
-        <h3 class="home__h3">the ultimate luxury experience</h3>
-        <h1 class="home__h1">The Perfect Base For You</h1>
-        <div class="home__container">
-            <button class="home__button">take a tour</button>
-            <button class="home__button--light">learn more</button>
-        </div>
-    </section>
-
-    <section class="availability">
-        <div class="availability__container">
-            <label for="arrive">Arrive Date</label>
-            <input class="availability__input" type="date" name="arrive" id="arrive">
-        </div>
-        <div class="availability__container">
-            <label for="arrive">Departure Date</label>
-            <input class="availability__input" type="date" name="departure" id="departure">
-        </div>
-        <button class="availability__button">check availability</button>
-    </section>
-
-    <section class="about">
-        <div class="about__text">
-            <h3 class="about__h3">about us</h3>
-            <h1 class="about__h1">Discover Our Underground</h1>
-            <p class="about__p--long">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <button class="about__button">book now</button>
-        </div>
-        <div class="about__cardsContainer">
-            <div class="about__column--left">
-                <div class="about__card">
-                    <img class="about__img" src="./images/about1.jpg" alt="">
-                </div>
-                <div class="about__card--text">
-                    <img class="about__icon" src="./icons/teamIcon.svg" alt="">
-                    <img class="about__icon--shadow" src="./icons/teamIconShadow.svg" alt="">
-                    <h2 class="about__h2">Strong Team</h2>
-                    <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor.
-                    </p>
-                </div>
+    <nav class="nav">
+        <img src="./icons/Menu.svg" alt="Menu" class="nav__icon" id="menuBtn">
+        <div class="nav__container--flex">
+            <div class="nav__container--square">
+                <p class="nav__p--big">h</p>
             </div>
-
-            <div class="about__column--right">
-                <div class="about__card">
-                    <img class="about__img" src="./images/about2.jpg" alt="">
-                </div>
-                <div class="about__card--textDark">
-                    <img src="./icons/calendarIcon.svg" alt="">
-                    <h2 class="about__h2--light">Luxury Room</h2>
-                    <p class="about__p--light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor.
-                    </p>
-                </div>
+            <div class="nav__container--flexColumn">
+                <p class="nav__p--dark">hotel</p>
+                <p class="nav__p--light">miranda</p>
             </div>
         </div>
-    </section>
-
-    <section class="rooms">
-        <h3 class="rooms__h3">rooms</h3>
-        <h2 class="rooms__h2">Hand Picked Rooms</h2>
-        <div class="rooms__icons">
-            <img src="./icons/bed.svg" alt="bed">
-            <img src="./icons/wifi.svg" alt="wifi">
-            <img src="./icons/parking.svg" alt="parking">
-            <img src="./icons/cold.svg" alt="air conditioner">
-            <img src="./icons/gym.svg" alt="gym">
-            <img src="./icons/smoking.svg" alt="no smoking">
-            <img src="/icons/cocktail.svg" alt="minibar">
+        <ul class="nav__ul--row">
+            <li class="nav__li">About Us</li>
+            <li class="nav__li">Rooms</li>
+            <li class="nav__li">Offers</li>
+            <li class="nav__li">Contact</li>
+        </ul>
+        <div class="nav__container--icons">
+            <img src="./icons/user.svg" alt="User" class="nav__icon--small">
+            <img src="./icons/search.svg" alt="Search" class="nav__icon--small">
         </div>
-
-        <div class="swiper rooms__swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img class="rooms__img" src="./images/room1.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="rooms__img" src="./images/room2.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="rooms__img" src="./images/room3.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="rooms__img" src="./images/room1.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="rooms__img" src="./images/room2.jpg" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img class="rooms__img" src="./images/room3.jpg" alt="">
-              </div>
-            </div>
-            <div class="swiper-button-next rooms__button--next"></div>
-            <div class="swiper-button-prev rooms__button--prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-        <div class="rooms__description">
-            <div class="rooms__text">
-                <h2 class="rooms__h2">Minimal Duplex Room</h2>
-                <p class="rooms__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-            </div>
-            <div class="rooms__price">
-                <strong class="rooms__strong">$345 <span class="rooms__span">/Night</span></strong>
-            </div>
-        </div>
-    </section>
-
-    <section class="video">
-        <div class="video__wrapper">
-            <div class="video__text">
-                <h3 class="video__h3">intro video</h3>
-                <h1 class="video__h1">Meet With Our Luxury Place</h1>
-                <p class="video__p">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
-                </p>
-            </div>
-            <iframe 
-                class="video__frame" 
-                src="https://www.youtube.com/embed/Bu3Doe45lcU?si=YyHcLktKvbtLVTuP&amp;clip=UgkxJ325RzPJxDLLco-zBbik_Ev0zbf8sqy8&amp;clipt=EKjDARj4yQQ" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen>
-            </iframe>
-    
-            <button class="video__button">book now</button>
-        </div>
-    </section>
-
-    <section class="facilities">
-        <h3 class="facilities__h3">facilities</h3>
-        <h1 class="facilities__h1">Core Features</h1>
-        <div class="swiper facilities__swiper">
-            <div class="swiper-wrapper">
-              <div class="facilities__slide swiper-slide">
-                <span class="facilities__span">01</span>
-                <img src="./icons/core 1.svg" alt="">
-                <h2 class="facilities__h2">Have High Rating</h2>
-                <p class="facilities__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna..
-                </p>
-              </div>
-              <div class="facilities__slide swiper-slide">
-                <span class="facilities__span">02</span>
-                <img src="./icons/core 2.svg" alt="">
-                <h2 class="facilities__h2">Quiet Hours</h2>
-                <p class="facilities__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna..
-                </p>
-              </div> 
-              <div class="facilities__slide swiper-slide">
-                <span class="facilities__span">03</span>
-                <img src="./icons/core 3.svg" alt="">
-                <h2 class="facilities__h2">Have Best Locations</h2>
-                <p class="facilities__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna..
-                </p>
-              </div>
-              <div class="facilities__slide swiper-slide">
-                <span class="facilities__span">04</span>
-                <img src="./icons/core 4.svg" alt="">
-                <h2 class="facilities__h2">Free Cancellation</h2>
-                <p class="facilities__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna..
-                </p>
-              </div> 
-              <div class="facilities__slide swiper-slide">
-                <span class="facilities__span">05</span>
-                <img src="./icons/core 5.svg" alt="">
-                <h2 class="facilities__h2">Payment Options</h2>
-                <p class="facilities__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna..
-                </p>
-              </div>
-              <div class="facilities__slide swiper-slide">
-                <span class="facilities__span">06</span>
-                <img src="./icons/core  6.svg" alt="">
-                <h2 class="facilities__h2">Special Offers</h2>
-                <p class="facilities__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna..
-                </p>
-              </div>
-              
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-
-    
+    </nav>
+    <ul class="nav__ul--column" id="navUlColumn">
+        <li class="nav__li">About Us</li>
+        <li class="nav__li">Rooms</li>
+        <li class="nav__li">Offers</li>
+        <li class="nav__li">Contact</li>
+    </ul>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./javascript/script.js"></script>
