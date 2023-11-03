@@ -40,7 +40,6 @@
     }
 
     &__h1{
-        max-width: 34rem;
         font-family: $font__family--sec;
         font-size: 5.6rem;
         font-weight: 400;
@@ -51,6 +50,10 @@
 
     &__h1--dark{
         color: $font__color--darkest;
+    }
+
+    &__h1--clamp{
+        max-width: 34rem;
     }
 
     &__h3{
@@ -200,6 +203,17 @@
         height: 100%;
         z-index: -1; 
     }
+}
+
+.section--noBg{
+    padding: 5em 0;
+    background: $bg__color--light;
+    align-items: center;
+    text-align: center;
+    &::before {
+        background-color: transparent;     
+    }
+
 }
 
 
