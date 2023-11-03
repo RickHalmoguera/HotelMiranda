@@ -70,7 +70,7 @@
   color: #777;
 }
 .section__p--clamp {
-  width: 20rem;
+  width: 100%;
 }
 .section__button--dark {
   width: 21rem;
@@ -120,15 +120,21 @@
 .section__flex {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2em;
 }
 .section__flex--column {
+  max-width: 49em;
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 .section__container {
   height: 30rem;
+  min-width: 27rem;
+}
+.section__container--img {
+  overflow: hidden;
 }
 .section__container--text {
   position: relative;
@@ -149,11 +155,13 @@
   z-index: 2;
 }
 .section__icon--shadow {
+  max-width: 35%;
+}
+.section__icon--shadow {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   z-index: 1;
-  transform: translate(0, -90%);
 }
 
 .section--small {
@@ -177,15 +185,46 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .about1 {
+    grid-area: about1;
+    align-self: flex-start;
+    margin-top: 2em;
+  }
+  .about2 {
+    grid-area: about2;
+    align-self: flex-end;
+    margin-bottom: 2em;
+  }
+  .about3 {
+    grid-area: about3;
+    align-self: flex-start;
+    margin-bottom: 2em;
+  }
+  .about4 {
+    grid-area: about4;
+    align-self: flex-end;
+  }
   .section {
     padding: 10em 20%;
   }
   .section__input {
     width: 30rem;
   }
+  .section__p--clamp {
+    width: 20rem;
+  }
   .section__flex {
     flex-direction: row-reverse;
-    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+  .section__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "about2 about1" "about3 about4";
+    gap: 1em;
   }
   .section--small {
     padding: 5em 0 5em 20%;
@@ -194,5 +233,12 @@
     align-items: center;
     background: #222;
     gap: 2em;
+  }
+  .section--bgAlt {
+    -webkit-box-shadow: inset 18px 3px 33px 150px #FFFFFF;
+    box-shadow: inset 18px 3px 33px 150px #ffffff;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom 0 right 0;
   }
 }/*# sourceMappingURL=section.css.map */
