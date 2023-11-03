@@ -113,7 +113,7 @@
   padding: 5em 1em;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
   color: #FFF;
   font-family: "Archivo", sans-serif;
   z-index: 0;
@@ -135,13 +135,50 @@
   line-height: 1.8rem;
   letter-spacing: 2.8px;
   text-transform: uppercase;
+  color: #FFF;
+}
+.section__h2--dark {
+  color: #777;
 }
 .section__h1 {
+  max-width: 34rem;
   font-family: "Old Standard TT", serif;
   font-size: 5.6rem;
   font-weight: 400;
   line-height: 6rem;
   letter-spacing: -1.2px;
+  color: #FFF;
+}
+.section__h1--dark {
+  color: #111;
+}
+.section__h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.9px;
+  z-index: 2;
+}
+.section__h3--dark {
+  color: #111;
+}
+.section__p {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.section__p--light {
+  color: #FFF;
+}
+.section__p--dark {
+  color: #777;
+}
+.section__p--clamp {
+  width: 20rem;
 }
 .section__button--dark {
   width: 21rem;
@@ -183,10 +220,48 @@
   border-bottom: 2px solid #BEAD8E;
   padding-bottom: 0.5em;
 }
+.section__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .section__flex {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 2em;
+}
+.section__flex--column {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.section__container {
+  height: 30rem;
+}
+.section__container--text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  text-align: center;
+}
+.section__container--light {
+  background-color: #FFF;
+}
+.section__container--dark {
+  background-color: #222;
+}
+.section__icon {
+  z-index: 2;
+}
+.section__icon--shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(0, -90%);
 }
 
 .section--small {
@@ -195,12 +270,30 @@
   gap: 2em;
 }
 
+.section--bgAlt {
+  background-image: url("../images/discover.jpg");
+}
+.section--bgAlt::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.753);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 @media only screen and (min-width: 1000px) {
   .section {
     padding: 10em 20%;
   }
   .section__input {
     width: 30rem;
+  }
+  .section__flex {
+    flex-direction: row-reverse;
+    gap: 2em;
   }
   .section--small {
     padding: 5em 0 5em 20%;

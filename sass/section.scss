@@ -8,7 +8,7 @@
     padding: 5em 1em;
     display: flex;
     flex-direction: column;
-    gap: 1em;    
+    gap: 2em;    
     color: $font__color--light;
     font-family: $font__family--main;
     z-index: 0;
@@ -31,14 +31,61 @@
         line-height: 1.8rem; 
         letter-spacing: 2.8px;
         text-transform: uppercase;
+        color: $font__color--light;
+    }
+
+    &__h2--dark{
+        color: $font__color--dark;
     }
 
     &__h1{
+        max-width: 34rem;
         font-family: $font__family--sec;
         font-size: 5.6rem;
         font-weight: 400;
         line-height: 6rem;
         letter-spacing: -1.2px;
+        color: $font__color--light;
+    }
+
+    &__h1--dark{
+        color: $font__color--darkest;
+    }
+
+    &__h3{
+        color:$font__color--light;
+        text-align: center;
+        font-family: $font__family--sec;
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: -0.9px;
+        z-index: 2;
+    }
+
+    &__h3--dark{
+        color: $font__color--darkest;
+    }
+
+
+    &__p{
+        font-family: $font__family--main;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+    }
+    
+    &__p--light{
+        color: $font__color--light;
+    }
+
+    &__p--dark{
+        color: $font__color--dark;
+    }
+
+    &__p--clamp{
+        width: 20rem;
+        
     }
 
     &__button--dark{
@@ -69,10 +116,58 @@
         padding-bottom: .5em;
     }
 
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     &__flex{
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
+    }
+
+
+    &__flex--column{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    &__container{
+        height: 30rem;
+    }
+
+    
+    &__container--text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        text-align: center;
+    }
+
+    &__container--light{
+        background-color: $bg__color--light;
+    }
+    
+    &__container--dark{
+        background-color: $bg__color--dark;
+    }
+
+    &__icon{
+        z-index: 2;
+    }
+
+    &__icon--shadow{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate( 0, -90%);
     }
 }
 
@@ -80,6 +175,21 @@
     padding: 5em 2em;
     background: $bg__color--dark;
     gap: 2em;
+}
+
+.section--bgAlt{
+    background-image: url("../images/discover.jpg");
+
+    &::before {
+        content: "";
+        background-color: rgba(255, 255, 255, 0.753);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+    }
 }
 
 
@@ -90,7 +200,13 @@
         &__input{
             width: 30rem;
         }
+        
+        &__flex{
+            flex-direction: row-reverse;
+            gap: 2em;
+        }
     }
+    
 
     .section--small{
         padding: 5em 0 5em 20%; 
@@ -101,4 +217,5 @@
         gap: 2em;
     }
 }
+
 
