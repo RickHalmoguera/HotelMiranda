@@ -1,0 +1,54 @@
+.swiperRoom {
+  width: 100%;
+  height: 50rem;
+}
+.swiperRoom__topDiv {
+  position: absolute;
+  width: 60%;
+  min-height: 4rem;
+  top: -20px;
+  right: 50%;
+  transform: translate(50%);
+  padding: 0.5em;
+  background-color: red;
+  z-index: 10;
+}
+.swiperRoom__bottomDiv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 60%;
+  bottom: -100px;
+  right: 50%;
+  transform: translate(50%);
+  padding: 1.5em;
+  background-color: red;
+  z-index: 10;
+}
+.swiperRoom__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiperRoom__button--next {
+  background-color: #BEAD8E;
+  color: #FFF;
+  font-size: 1.6rem;
+  padding: 2em;
+}
+.swiperRoom__button--prev {
+  background-color: #FFF;
+  color: #111;
+  font-size: 1.6rem;
+  padding: 2em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swiperRoom__topDiv {
+    width: 25%;
+  }
+  .swiperRoom__bottomDiv {
+    width: 25%;
+  }
+}/*# sourceMappingURL=swiperRoom.css.map */

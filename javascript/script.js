@@ -21,12 +21,13 @@ const handleMenu = () =>{
 }
 
 let swiper = new Swiper(".swiper", {
+  containerModifierClass:'swiperRoom__',
   slidesPerView: 1,
   spaceBetween: 30,
   loop:true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiperRoom__button--next',
+    prevEl: '.swiperRoom__button--prev',
   },
   breakpoints:{
     1000:{

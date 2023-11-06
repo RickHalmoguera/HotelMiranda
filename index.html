@@ -105,26 +105,62 @@
         <h2 class="section__h2 section__h2--dark">rooms</h2>
         <h1 class="section__h1 section__h1--dark section__h1--centered">Hand Picked Rooms</h1>
 
-        <div class="swiper swiper--rooms">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/room1.jpg" alt="" class="swiper__img">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/room2.jpg" alt="" class="swiper__img">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/room3.jpg" alt="" class="swiper__img">
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/room4.jpg" alt="" class="swiper__img">
-              </div>
-             
+        <div class="swiper swiperRoom">
+            <div class="swiperRoom__topDiv">
+                <img src="./icons/bed.svg" alt="bed" class="swiperRoom__icon">
+                <img src="./icons/wifi.svg" alt="bed" class="swiperRoom__icon">
+                <img src="./icons/parking.svg" alt="bed" class="swiperRoom__icon">
+                <img src="./icons/cold.svg" alt="bed" class="swiperRoom__icon">
+                <img src="./icons/gym.svg" alt="bed" class="swiperRoom__icon">
+                <img src="./icons/smoking.svg" alt="bed" class="swiperRoom__icon">
+                <img src="./icons/cocktail.svg" alt="bed" class="swiperRoom__icon">
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-wrapper swiperRoom__wrapper">
+                
+              <div class="swiper-slide swiperRoom__slide">
+                <img src="./images/room1.jpg" alt="" class="swiperRoom__img">
+              </div>
+              <div class="swiper-slide swiperRoom__slide">
+                <img src="./images/room2.jpg" alt="" class="swiperRoom__img">
+              </div>
+              <div class="swiper-slide swiperRoom__slide">
+                <img src="./images/room3.jpg" alt="" class="swiperRoom__img">
+              </div>
+              <div class="swiper-slide swiperRoom__slide">
+                <img src="./images/room4.jpg" alt="" class="swiperRoom__img">
+              </div>
+            </div>
+            <div class="swiperRoom__bottomDiv">
+                <h3 class="section__h3 section__h3--dark">Minimal Duplex Room</h3>
+                <p class="section__p section__p--dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore.
+                </p>
+                <span class="section__span">$345<span class="section__span--small">/Night</span></span>
+            </div>
+            <div class="swiper-button-prev swiperRoom__button--prev"></div>
+            <div class="swiper-button-next swiperRoom__button--next"></div>
         </div>
     </section>
+
+    <swection class="section section--twoColors">
+        <h2 class="section__h2 section__h2--medium">intro video</h2>
+        <h1 class="section__h1 section__h1--light section__h1--clamp">Meet With Our Luxury Place.</h1>
+        <p class="section__p  section__p--medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+            ut aliquip ex ea commodo consequat.
+        </p>
+        <button class="section__button--dark section__button--changeOrder">book now</button>
+        <iframe class="section__frame"
+        src="https://www.youtube.com/embed/Bu3Doe45lcU?si=cAuDFft_5fvRJTD-&amp;clip=UgkxoGaKcl356ATRFimV2AYXN4FwamgLJGPH&amp;clipt=EKjDARj4yQQ" 
+        title="Hotel Miranda" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+        </iframe>
+
+
+
+    </swection>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

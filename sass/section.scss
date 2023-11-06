@@ -10,7 +10,7 @@
     flex-direction: column;
     
     gap: 2em;    
-    color: $font__color--light;
+    color: $font__color--text-light;
     font-family: $font__family--main;
     z-index: 0;
     position: relative;
@@ -32,11 +32,14 @@
         line-height: 1.8rem; 
         letter-spacing: 2.8px;
         text-transform: uppercase;
-        color: $font__color--light;
+        color: $font__color--text-light;
     }
 
+    &__h2--medium{
+        color: $font__color--highlight;
+    }
     &__h2--dark{
-        color: $font__color--dark;
+        color: $font__color--text-dark;
     }
 
     &__h1{
@@ -45,19 +48,19 @@
         font-weight: 400;
         line-height: 6rem;
         letter-spacing: -1.2px;
-        color: $font__color--light;
+        color: $font__color--text-light;
     }
 
     &__h1--dark{
-        color: $font__color--darkest;
+        color: $font__color--text-darkest;
     }
 
     &__h1--clamp{
-        max-width: 34rem;
+        max-width: 45rem;
     }
 
     &__h3{
-        color:$font__color--light;
+        color:$font__color--text-light;
         text-align: center;
         font-family: $font__family--sec;
         font-size: 3rem;
@@ -68,7 +71,7 @@
     }
 
     &__h3--dark{
-        color: $font__color--darkest;
+        color: $font__color--text-darkest;
     }
 
 
@@ -80,15 +83,29 @@
     }
     
     &__p--light{
-        color: $font__color--light;
+        color: $font__color--text-light;
     }
 
+    &__p--medium{
+        max-width: 48rem;
+        color: $font__color--text-medium;
+    }
+    
     &__p--dark{
-        color: $font__color--dark;
+        color: $font__color--text-dark;
     }
-
+    
     &__p--clamp{
         width: 100%;
+    }
+    
+    &__span{
+        color: $font__color--highlight;
+        text-align: center;
+        font-family: $font__family--main;
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 4.3rem;
     }
 
     &__button--dark{
@@ -103,6 +120,10 @@
         margin-bottom: 5em;
     }
 
+    &__button--changeOrder{
+        order: 6;
+    }
+
     &__label{
         font-family: $font__family--extra;
         font-size: 1.6rem;
@@ -113,7 +134,7 @@
         background: transparent;
         font-size: 1.4rem;
         font-family: $font__family--extra;
-        color: $font__color--medium;
+        color: $font__color--text-medium;
         border: none;
         border-bottom: 2px solid $btn__color--dark;
         padding-bottom: .5em;
@@ -132,7 +153,6 @@
         align-items: center;
         gap: 2em;
     }
-
 
     &__flex--column{
         max-width: 49em;
@@ -180,7 +200,10 @@
         top: 20%;
         left: 50%;
         z-index: 1;
-        
+    }
+
+    &__frame{
+        min-height: 30rem;
     }
 }
 
@@ -213,9 +236,14 @@
     &::before {
         background-color: transparent;     
     }
-
 }
 
+.section--twoColors{
+    background: $bg__color--dark;
+    &::before {
+        background-color: transparent;     
+    }
+}
 
 @media only screen and (min-width:1000px){
     .about1{
@@ -268,6 +296,16 @@
             'about3 about4';
             gap: 1em;
         }
+        
+        &__button--changeOrder{
+            order: 2;
+        }
+
+        &__frame{
+            width: 50%;
+            min-height: 46rem;
+            order: 5;
+        }
     }
 
     .section--small{
@@ -286,6 +324,18 @@
         background-repeat: no-repeat;
         background-position: bottom 0 right 0;
     }
+
+    .section--noBg{
+        padding: 5em 0;
+       
+    }
+
+    .section--twoColors{
+        background: linear-gradient(to right, $bg__color--dark 0%,$bg__color--dark 70%, $btn__color--dark 70%);
+        max-height: 70rem;
+        flex-wrap: wrap;
+    }
+    
 }
 
 
