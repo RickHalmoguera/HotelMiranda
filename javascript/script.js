@@ -20,8 +20,8 @@ const handleMenu = () =>{
   }
 }
 
-let swiper = new Swiper(".swiper", {
-  containerModifierClass:'swiperRoom__',
+const swiperRoom = new Swiper(".swiperRoom", {
+  containerModifierClass :"swiperRoom__",
   slidesPerView: 1,
   spaceBetween: 30,
   loop:true,
@@ -34,7 +34,25 @@ let swiper = new Swiper(".swiper", {
       slidesPerView: 3
     }
   }
-});
+})
 
+const swiperCore = new Swiper(".swiperCore",{
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination:{
+    el:".swiperCore__pagination",
+  },
+  breakpoints:{
+    1000:{
+      slidesPerView: 3,
+      
+      grid:{
+        fill:"row",
+        rows:2,
+      }
+    }
+  }
+})
 
 menuBtn.addEventListener('click',handleMenu)

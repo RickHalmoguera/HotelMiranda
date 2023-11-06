@@ -1,6 +1,7 @@
 .swiperRoom {
   width: 100%;
   height: 50rem;
+  position: relative;
 }
 .swiperRoom__topDiv {
   position: absolute;
@@ -34,13 +35,13 @@
 .swiperRoom__button--next {
   background-color: #BEAD8E;
   color: #FFF;
-  font-size: 1.6rem;
+  --swiper-navigation-size: 1.6rem;
   padding: 2em;
 }
 .swiperRoom__button--prev {
   background-color: #FFF;
   color: #111;
-  font-size: 1.6rem;
+  --swiper-navigation-size: 1.6rem;
   padding: 2em;
 }
 

@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+
+.swiperCore{
+    width: 100%;
+    position: relative;
+
+    &__span{
+        color: #2222220a;
+        font-family: $font__family--main;
+        font-size: 12rem;
+        font-weight: 700;
+        line-height: 13rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__slide{
+        min-height: 37rem;
+        padding: 8em 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 2em;
+    }
+
+    &__img{
+        transition: .3s;
+    }
+    &__img:hover{
+        scale:1.5
+    }
+
+
+
+}
+
+.swiper-pagination-bullet-active{
+    --swiper-pagination-color: #BEAD8E;
+}
+
+@media only screen and (min-width:1000px){
+  
+    .swiperRoom{
+        &__topDiv{
+            width: 25%;
+        }
+        &__bottomDiv{
+            width: 25%;
+        }
+    }
+}
