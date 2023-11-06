@@ -8,6 +8,7 @@
     padding: 5em 1em;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     
     gap: 2em;    
     color: $font__color--text-light;
@@ -63,7 +64,7 @@
         color:$font__color--text-light;
         text-align: center;
         font-family: $font__family--sec;
-        font-size: 3rem;
+        font-size: 2.4rem;
         font-weight: 400;
         line-height: 3rem;
         letter-spacing: -0.9px;
@@ -146,8 +147,18 @@
         object-fit: cover;
     }
 
+    &__img--small{
+        width: 12rem;
+        height: 12rem;
+    }
+
+    &__img--positionMove{
+        position: absolute;
+        right: -3rem;
+        top: 0;
+    }
+
     &__flex{
-        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -228,14 +239,23 @@
     }
 }
 
+
 .section--noBg{
-    padding: 5em 0;
+    padding-top: 5em;
     background: $bg__color--light;
-    align-items: center;
-    text-align: center;
     &::before {
         background-color: transparent;     
     }
+}
+
+.section--centered{
+    align-items: center;
+    text-align: center;
+    
+}
+
+.section--fullWidth{
+    text-align: center;
 }
 
 .section--twoColors{
@@ -243,6 +263,10 @@
     &::before {
         background-color: transparent;     
     }
+}
+
+.section--paddingTop{
+    padding-top:10em ;
 }
 
 @media only screen and (min-width:1000px){
@@ -306,6 +330,12 @@
             min-height: 46rem;
             order: 5;
         }
+
+        &__img--positionMove{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
     }
 
     .section--small{
@@ -325,10 +355,15 @@
         background-position: bottom 0 right 0;
     }
 
-    .section--noBg{
-        padding: 5em 0;  
+
+    .section--centered{
+        padding: 5em 20%;
     }
 
+    .section--fullWidth{
+        padding: 5em 0;
+    }
+    
     .section--twoColors{
         background: linear-gradient(to right, $bg__color--dark 0%,$bg__color--dark 70%, $btn__color--dark 70%);
         max-height: 70rem;

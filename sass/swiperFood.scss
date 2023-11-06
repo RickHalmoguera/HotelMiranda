@@ -1,0 +1,90 @@
+@import './variables.scss';
+
+.swiperFood{
+    width: 100%;
+    
+    position: relative;
+
+    &__wrapper{
+        width: 100%;
+    }
+    &__slide{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    &__text{
+        max-width: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 2em;
+        flex-shrink: 2;
+    }
+
+    &__h3, &__p{
+        color: $font__color--text-darkest;
+    }
+
+    &__slide:hover &__text{
+        background-color: $bg__color--dark;
+        color: $font__color--text-light;
+    }
+
+    &__icon{
+        visibility: hidden;
+        &:hover{
+            visibility: visible;
+        }
+    }
+
+
+    &__slide:hover  &__icon{
+        visibility: visible;
+    }
+
+    &__slide:hover &__h3, &__slide:hover &__p {
+        color: $font__color--text-light;
+    }
+
+    &__img{
+        width: 12rem;
+        height: 12rem;
+        object-fit: cover;
+        flex-shrink: 1;
+    }
+
+    &__button--next{
+        background-color: $btn__color--dark;
+        color: $font__color--text-light;
+        --swiper-navigation-size: 1.6rem;
+        --swiper-navigation-top-offset: 100%;
+        padding: 2em;
+    }
+    &__button--prev{
+        background-color: $bg__color--medium;
+        color: $font__color--text-darkest;
+        --swiper-navigation-size: 1.6rem;
+        --swiper-navigation-top-offset: 100%;
+        --swiper-navigation-sides-offset: 70%;
+        padding: 2em;
+    }
+
+
+}
+
+@media only screen and (min-width:1000px){
+    .swiperFood{
+
+        &__button--next{
+            --swiper-navigation-top-offset: 20%;
+        }
+
+        &__button--prev{
+            --swiper-navigation-top-offset: 20%;
+        }
+    }
+}

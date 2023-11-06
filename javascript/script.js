@@ -55,4 +55,28 @@ const swiperCore = new Swiper(".swiperCore",{
   }
 })
 
+const swiperFood = new Swiper(".swiperFood",{
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  grid:{
+    fill:"row",
+    rows:3,
+  },
+  navigation: {
+    nextEl: '.swiperFood__button--next',
+    prevEl: '.swiperFood__button--prev',
+  },
+  breakpoints:{
+    1400:{
+      slidesPerView: 2,
+      grid:{
+        fill:"row",
+        rows:3,
+      }
+    }
+  },
+})
+
+
 menuBtn.addEventListener('click',handleMenu)
