@@ -216,6 +216,12 @@
     &__frame{
         min-height: 30rem;
     }
+
+    &__swiperContainer{
+        height: 60rem;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .section--small{
@@ -336,6 +342,8 @@
             left: 0;
             top: 0;
         }
+
+       
     }
 
     .section--small{

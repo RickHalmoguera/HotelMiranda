@@ -196,6 +196,11 @@
 .section__frame {
   min-height: 30rem;
 }
+.section__swiperContainer {
+  height: 60rem;
+  display: flex;
+  align-items: center;
+}
 
 .section--small {
   padding: 5em 2em;

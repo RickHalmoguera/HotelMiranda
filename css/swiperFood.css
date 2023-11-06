@@ -1,5 +1,6 @@
 .swiperFood {
   width: 100%;
+  height: 100%;
   position: relative;
 }
 .swiperFood__wrapper {
@@ -8,7 +9,7 @@
 .swiperFood__slide {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 2em;
 }
 .swiperFood__text {
@@ -28,13 +29,7 @@
   color: #FFF;
 }
 .swiperFood__icon {
-  visibility: hidden;
-}
-.swiperFood__icon:hover {
-  visibility: visible;
-}
-.swiperFood__slide:hover .swiperFood__icon {
-  visibility: visible;
+  display: none;
 }
 .swiperFood__slide:hover .swiperFood__h3, .swiperFood__slide:hover .swiperFood__p {
   color: #FFF;
@@ -67,5 +62,8 @@
   }
   .swiperFood__button--prev {
     --swiper-navigation-top-offset: 20%;
+  }
+  .swiperFood__icon {
+    display: block;
   }
 }/*# sourceMappingURL=swiperFood.css.map */

@@ -304,6 +304,11 @@
 .section__frame {
   min-height: 30rem;
 }
+.section__swiperContainer {
+  height: 60rem;
+  display: flex;
+  align-items: center;
+}
 
 .section--small {
   padding: 5em 2em;
@@ -535,6 +540,7 @@
 }
 .swiperFood {
   width: 100%;
+  height: 100%;
   position: relative;
 }
 .swiperFood__wrapper {
@@ -543,7 +549,7 @@
 .swiperFood__slide {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 2em;
 }
 .swiperFood__text {
@@ -563,13 +569,7 @@
   color: #FFF;
 }
 .swiperFood__icon {
-  visibility: hidden;
-}
-.swiperFood__icon:hover {
-  visibility: visible;
-}
-.swiperFood__slide:hover .swiperFood__icon {
-  visibility: visible;
+  display: none;
 }
 .swiperFood__slide:hover .swiperFood__h3, .swiperFood__slide:hover .swiperFood__p {
   color: #FFF;
@@ -602,6 +602,28 @@
   }
   .swiperFood__button--prev {
     --swiper-navigation-top-offset: 20%;
+  }
+  .swiperFood__icon {
+    display: block;
+  }
+}
+.swiperFoodPhotos__wrapper {
+  width: 100%;
+}
+.swiperFoodPhotos__slide {
+  width: 33rem;
+  height: 33rem;
+}
+.swiperFoodPhotos__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swiperFoodPhotos__slide {
+    width: 37rem;
+    height: 37rem;
   }
 }
 html {
