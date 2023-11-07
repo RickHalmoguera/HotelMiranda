@@ -7,8 +7,9 @@
   width: 100%;
 }
 .swiperFood__slide {
-  width: 100%;
+  margin: 0;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 2em;
 }
@@ -24,7 +25,7 @@
 .swiperFood__h3, .swiperFood__p {
   color: #111;
 }
-.swiperFood__slide:hover .swiperFood__text {
+.swiperFood__slide:hover {
   background-color: #222;
   color: #FFF;
 }
@@ -44,15 +45,13 @@
   background-color: #BEAD8E;
   color: #FFF;
   --swiper-navigation-size: 1.6rem;
-  --swiper-navigation-top-offset: 100%;
   padding: 2em;
+  z-index: 10;
 }
 .swiperFood__button--prev {
   background-color: #F8F8F8;
   color: #111;
   --swiper-navigation-size: 1.6rem;
-  --swiper-navigation-top-offset: 100%;
-  --swiper-navigation-sides-offset: 70%;
   padding: 2em;
 }
 

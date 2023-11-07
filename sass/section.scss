@@ -5,7 +5,7 @@
     background-image: url("../images/home.jpg");
     background-position: center center;
     background-size: cover;
-    padding: 5em 1em;
+    padding: 8em 1em;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
@@ -222,6 +222,18 @@
         display: flex;
         align-items: center;
     }
+
+    &__swiperContainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__swiperBtns{
+        margin-left: auto;
+        display: flex;
+        gap: 1em;
+    }
 }
 
 .section--small{
@@ -300,7 +312,7 @@
 
 
     .section{
-        padding: 10em 20%;
+        padding: 12em 20%;
 
         &__input{
             width: 30rem;
@@ -343,6 +355,9 @@
             top: 0;
         }
 
+        &__swiperBtns{
+           order: -1;
+        }
        
     }
 

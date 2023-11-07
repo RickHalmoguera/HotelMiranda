@@ -57,7 +57,6 @@ const swiperCore = new Swiper(".swiperCore",{
 
 const swiperFood = new Swiper(".swiperFood",{
   slidesPerView: 1,
-  spaceBetween: 30,
   loop: true,
   grid:{
     fill:"row",
@@ -68,7 +67,7 @@ const swiperFood = new Swiper(".swiperFood",{
     prevEl: '.swiperFood__button--prev',
   },
   breakpoints:{
-    1000:{
+    1200:{
       slidesPerView: 2,
       grid:{
         fill:"row",
@@ -82,6 +81,7 @@ const swiperFoodPhotos = new Swiper (".swiperFoodPhotos",{
   slidesPerView:1,
   spaceBetween: 30,
   loop: true,
+
   pagination:{
     el:".swiperFoodPhotos__pagination"
   },

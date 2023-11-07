@@ -104,8 +104,7 @@
     <section class="section section--noBg section--fullWidth">
         <h2 class="section__h2 section__h2--dark">rooms</h2>
         <h1 class="section__h1 section__h1--dark section__h1--centered">Hand Picked Rooms</h1>
-
-        <div class="swiper swiperRoom">
+        <div class="section__swiperContainer">
             <div class="swiperRoom__topDiv">
                 <img src="./icons/bed.svg" alt="bed" class="swiperRoom__icon">
                 <img src="./icons/wifi.svg" alt="bed" class="swiperRoom__icon">
@@ -115,20 +114,24 @@
                 <img src="./icons/smoking.svg" alt="bed" class="swiperRoom__icon">
                 <img src="./icons/cocktail.svg" alt="bed" class="swiperRoom__icon">
             </div>
-            <div class="swiper-wrapper swiperRoom__wrapper">
-                
-              <div class="swiper-slide swiperRoom__slide">
-                <img src="./images/room1.jpg" alt="" class="swiperRoom__img">
-              </div>
-              <div class="swiper-slide swiperRoom__slide">
-                <img src="./images/room2.jpg" alt="" class="swiperRoom__img">
-              </div>
-              <div class="swiper-slide swiperRoom__slide">
-                <img src="./images/room3.jpg" alt="" class="swiperRoom__img">
-              </div>
-              <div class="swiper-slide swiperRoom__slide">
-                <img src="./images/room4.jpg" alt="" class="swiperRoom__img">
-              </div>
+            <div class="swiper swiperRoom">
+                <div class="swiper-wrapper swiperRoom__wrapper">
+                    
+                  <div class="swiper-slide swiperRoom__slide">
+                    <img src="./images/room1.jpg" alt="" class="swiperRoom__img">
+                  </div>
+                  <div class="swiper-slide swiperRoom__slide">
+                    <img src="./images/room2.jpg" alt="" class="swiperRoom__img">
+                  </div>
+                  <div class="swiper-slide swiperRoom__slide">
+                    <img src="./images/room3.jpg" alt="" class="swiperRoom__img">
+                  </div>
+                  <div class="swiper-slide swiperRoom__slide">
+                    <img src="./images/room4.jpg" alt="" class="swiperRoom__img">
+                  </div>
+                </div>
+                <div class="swiper-button-prev swiperRoom__button--prev"></div>
+                <div class="swiper-button-next swiperRoom__button--next"></div>
             </div>
             <div class="swiperRoom__bottomDiv">
                 <h3 class="section__h3 section__h3--dark">Minimal Duplex Room</h3>
@@ -137,8 +140,6 @@
                 </p>
                 <span class="section__span">$345<span class="section__span--small">/Night</span></span>
             </div>
-            <div class="swiper-button-prev swiperRoom__button--prev"></div>
-            <div class="swiper-button-next swiperRoom__button--next"></div>
         </div>
     </section>
 
@@ -230,7 +231,6 @@
         <h1 class="section__h1 section__h1--dark">Our Foods Menu</h1>
 
         <div class="section__swiperContainer">
-
             <div class="swiper swiperFood">
                 <div class="swiper-wrapper swipperFood__wrapper">
                     <div class="swiper-slide swiperFood__slide">
@@ -295,8 +295,10 @@
                     </div>
                 </div>
                 
-                <div class="swiper-button-prev swiperFood__button--prev"></div>
-                <div class="swiper-button-next swiperFood__button--next"></div>
+            </div>
+            <div class="section__swiperBtns">
+                <div class="swiperFood__button--prev"><</div>
+                <div class="swiperFood__button--next">></div>
             </div>
         </div>
         

@@ -5,13 +5,16 @@
 }
 .swiperRoom__topDiv {
   position: absolute;
-  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
   min-height: 4rem;
   top: -20px;
   right: 50%;
   transform: translate(50%);
   padding: 0.5em;
-  background-color: red;
+  background-color: #FFF;
   z-index: 10;
 }
 .swiperRoom__bottomDiv {
@@ -19,12 +22,12 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: 60%;
-  bottom: -100px;
+  width: 80%;
+  bottom: -50px;
   right: 50%;
   transform: translate(50%);
   padding: 1.5em;
-  background-color: red;
+  background-color: #FFF;
   z-index: 10;
 }
 .swiperRoom__img {

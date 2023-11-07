@@ -2,7 +2,7 @@
   background-image: url("../images/home.jpg");
   background-position: center center;
   background-size: cover;
-  padding: 5em 1em;
+  padding: 8em 1em;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -201,6 +201,16 @@
   display: flex;
   align-items: center;
 }
+.section__swiperContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.section__swiperBtns {
+  margin-left: auto;
+  display: flex;
+  gap: 1em;
+}
 
 .section--small {
   padding: 5em 2em;
@@ -271,7 +281,7 @@
     align-self: flex-end;
   }
   .section {
-    padding: 10em 20%;
+    padding: 12em 20%;
   }
   .section__input {
     width: 30rem;
@@ -304,6 +314,9 @@
     position: absolute;
     left: 0;
     top: 0;
+  }
+  .section__swiperBtns {
+    order: -1;
   }
   .section--small {
     padding: 5em 0 5em 20%;

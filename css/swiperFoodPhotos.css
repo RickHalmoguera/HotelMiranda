@@ -1,9 +1,13 @@
+.swiperFoodPhotos {
+  width: 100%;
+  height: 27rem;
+}
 .swiperFoodPhotos__wrapper {
   width: 100%;
 }
 .swiperFoodPhotos__slide {
-  width: 33rem;
-  height: 33rem;
+  width: 100%;
+  height: 100%;
 }
 .swiperFoodPhotos__img {
   width: 100%;

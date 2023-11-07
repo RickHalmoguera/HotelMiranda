@@ -110,7 +110,7 @@
   background-image: url("../images/home.jpg");
   background-position: center center;
   background-size: cover;
-  padding: 5em 1em;
+  padding: 8em 1em;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -309,6 +309,16 @@
   display: flex;
   align-items: center;
 }
+.section__swiperContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.section__swiperBtns {
+  margin-left: auto;
+  display: flex;
+  gap: 1em;
+}
 
 .section--small {
   padding: 5em 2em;
@@ -379,7 +389,7 @@
     align-self: flex-end;
   }
   .section {
-    padding: 10em 20%;
+    padding: 12em 20%;
   }
   .section__input {
     width: 30rem;
@@ -412,6 +422,9 @@
     position: absolute;
     left: 0;
     top: 0;
+  }
+  .section__swiperBtns {
+    order: -1;
   }
   .section--small {
     padding: 5em 0 5em 20%;
@@ -447,13 +460,16 @@
 }
 .swiperRoom__topDiv {
   position: absolute;
-  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
   min-height: 4rem;
   top: -20px;
   right: 50%;
   transform: translate(50%);
   padding: 0.5em;
-  background-color: red;
+  background-color: #FFF;
   z-index: 10;
 }
 .swiperRoom__bottomDiv {
@@ -461,12 +477,12 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  width: 60%;
-  bottom: -100px;
+  width: 80%;
+  bottom: -50px;
   right: 50%;
   transform: translate(50%);
   padding: 1.5em;
-  background-color: red;
+  background-color: #FFF;
   z-index: 10;
 }
 .swiperRoom__img {
@@ -547,8 +563,9 @@
   width: 100%;
 }
 .swiperFood__slide {
-  width: 100%;
+  margin: 0;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 2em;
 }
@@ -564,7 +581,7 @@
 .swiperFood__h3, .swiperFood__p {
   color: #111;
 }
-.swiperFood__slide:hover .swiperFood__text {
+.swiperFood__slide:hover {
   background-color: #222;
   color: #FFF;
 }
@@ -584,15 +601,13 @@
   background-color: #BEAD8E;
   color: #FFF;
   --swiper-navigation-size: 1.6rem;
-  --swiper-navigation-top-offset: 100%;
   padding: 2em;
+  z-index: 10;
 }
 .swiperFood__button--prev {
   background-color: #F8F8F8;
   color: #111;
   --swiper-navigation-size: 1.6rem;
-  --swiper-navigation-top-offset: 100%;
-  --swiper-navigation-sides-offset: 70%;
   padding: 2em;
 }
 
@@ -607,12 +622,16 @@
     display: block;
   }
 }
+.swiperFoodPhotos {
+  width: 100%;
+  height: 27rem;
+}
 .swiperFoodPhotos__wrapper {
   width: 100%;
 }
 .swiperFoodPhotos__slide {
-  width: 33rem;
-  height: 33rem;
+  width: 100%;
+  height: 100%;
 }
 .swiperFoodPhotos__img {
   width: 100%;
