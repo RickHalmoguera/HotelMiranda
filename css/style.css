@@ -157,6 +157,13 @@
 .section__h3--dark {
   color: #111;
 }
+.section__h4 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 136.4%;
+}
 .section__p {
   font-family: "Archivo", sans-serif;
   font-size: 1.4rem;
@@ -177,12 +184,20 @@
   width: 20rem;
 }
 .section__span {
-  color: #BEAD8E;
   text-align: center;
   font-family: "Archivo", sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4.3rem;
+}
+.section__span--small {
+  font-size: 1.3rem;
+}
+.section__span--dark {
+  color: #BEAD8E;
+}
+.section__span--light {
+  color: #FFF;
 }
 .section__button--dark {
   width: 21rem;
@@ -245,6 +260,9 @@
   display: flex;
   align-items: center;
   gap: 2em;
+}
+.section__flex--noGap {
+  gap: 0;
 }
 .section__flex--row {
   flex-direction: row;
