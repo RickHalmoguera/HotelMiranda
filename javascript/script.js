@@ -21,7 +21,6 @@ const handleMenu = () =>{
 }
 
 const swiperRoom = new Swiper(".swiperRoom", {
-  containerModifierClass :"swiperRoom__",
   slidesPerView: 1,
   spaceBetween: 30,
   loop:true,

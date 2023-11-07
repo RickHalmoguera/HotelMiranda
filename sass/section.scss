@@ -2,30 +2,14 @@
 @import "./variables.scss";
 
 .section{
-    background-image: url("../images/home.jpg");
-    background-position: center center;
-    background-size: cover;
+    text-align: left;
     padding: 8em 1em;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    
-    gap: 2em;    
     color: $font__color--text-light;
     font-family: $font__family--main;
     z-index: 0;
     position: relative;
+    overflow-x: hidden;
 
-    &::before {
-        content: "";
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1; 
-    }
 
     &__h2{
         font-size: 1.3rem;
@@ -97,7 +81,7 @@
     }
     
     &__p--clamp{
-        width: 100%;
+        width: 20rem;
     }
     
     &__span{
@@ -124,6 +108,7 @@
     &__button--changeOrder{
         order: 6;
     }
+
 
     &__label{
         font-family: $font__family--extra;
@@ -160,16 +145,36 @@
 
     &__flex{
         display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 2em;
     }
 
+    &__flex--row{
+        flex-direction: row;
+    }
+
     &__flex--column{
-        max-width: 49em;
-        display: flex;
         flex-direction: column;
-        gap: 2em;
+    }
+
+    &__flex--columnRow{
+        flex-direction: column;
+    }
+    
+    &__flex--columnRowReverse{
+        flex-direction: column;
+    }
+
+    &__flex--wrap{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    &__flex--left{
+        align-items: flex-start;
+    }
+
+    &__flex--spaceBetween{
+        justify-content: space-between;
     }
 
     &__container{
@@ -218,14 +223,8 @@
     }
 
     &__swiperContainer{
-        height: 60rem;
-        display: flex;
-        align-items: center;
-    }
-
-    &__swiperContainer{
-        display: flex;
-        flex-direction: column;
+        
+        width: 100%;
         position: relative;
     }
 
@@ -233,14 +232,12 @@
         margin-left: auto;
         display: flex;
         gap: 1em;
+        order: 2;
     }
+    
 }
 
-.section--small{
-    padding: 5em 2em;
-    background: $bg__color--dark;
-    gap: 2em;
-}
+
 
 .section--bgAlt{
     background-image: url("../images/discover.jpg");
@@ -266,6 +263,22 @@
     }
 }
 
+.section--bg{
+    background-image: url("../images/home.jpg");
+    background-position: center center;
+    background-size: cover;
+    &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; 
+    }
+}
+
 .section--centered{
     align-items: center;
     text-align: center;
@@ -277,10 +290,15 @@
 }
 
 .section--twoColors{
+    height: 85rem;
     background: $bg__color--dark;
     &::before {
         background-color: transparent;     
     }
+}
+
+.section--dark{
+    background: $bg__color--dark;
 }
 
 .section--paddingTop{
@@ -321,14 +339,15 @@
         &__p--clamp{
             width: 20rem;
         }
-        
-        &__flex{
+        &__flex--columnRow{
+            flex-direction: row ;
+        }
+        &__flex--columnRowReverse{
             flex-direction: row-reverse;
             justify-content: center;
-            align-items: center;
-            gap: 4em;
         }
 
+        
         &__grid{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -339,14 +358,11 @@
             gap: 1em;
         }
         
-        &__button--changeOrder{
-            order: 2;
-        }
-
+     
         &__frame{
             width: 50%;
             min-height: 46rem;
-            order: 5;
+            order: 6;
         }
 
         &__img--positionMove{
@@ -354,10 +370,15 @@
             left: 0;
             top: 0;
         }
+        &__button--changeOrder{
+            order: 5;
+        }
 
         &__swiperBtns{
            order: -1;
         }
+
+        
        
     }
 
@@ -390,7 +411,6 @@
     .section--twoColors{
         background: linear-gradient(to right, $bg__color--dark 0%,$bg__color--dark 70%, $btn__color--dark 70%);
         max-height: 70rem;
-        flex-wrap: wrap;
     }
     
 }
