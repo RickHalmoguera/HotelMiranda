@@ -64,6 +64,7 @@
         gap: 1em;
         padding: 2em 1em;
         background-color: $bg__color__light;
+        z-index: 10;
     }
 
     &__li{

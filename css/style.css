@@ -81,6 +81,7 @@
   gap: 1em;
   padding: 2em 1em;
   background-color: #FFF;
+  z-index: 10;
 }
 .nav__li {
   font-family: "Archivo", sans-serif;
