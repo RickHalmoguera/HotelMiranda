@@ -183,6 +183,9 @@
 .section__p--clamp {
   width: 20rem;
 }
+.section__p--center {
+  text-align: center;
+}
 .section__span {
   text-align: center;
   font-family: "Archivo", sans-serif;
@@ -235,6 +238,7 @@
 }
 .section__input {
   background: transparent;
+  width: 100%;
   font-size: 1.4rem;
   font-family: "Roboto", sans-serif;
   color: #777;
@@ -283,6 +287,9 @@
 .section__flex--left {
   align-items: flex-start;
 }
+.section__flex--stretch {
+  align-items: stretch;
+}
 .section__flex--spaceBetween {
   justify-content: space-between;
 }
@@ -322,6 +329,7 @@
 }
 .section__frame {
   min-height: 30rem;
+  width: 100%;
 }
 .section__swiperContainer {
   width: 100%;
@@ -382,6 +390,7 @@
 }
 
 .section--twoColors {
+  margin-top: 2em;
   height: 85rem;
   background: #222;
 }
@@ -673,6 +682,21 @@
     height: 37rem;
   }
 }
+.footer {
+  background-image: url("../images/footerBg.png");
+  z-index: 0;
+}
+.footer::before {
+  content: "";
+  background-color: rgba(211, 211, 211, 0.753);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 html {
   font-size: 10px;
 }

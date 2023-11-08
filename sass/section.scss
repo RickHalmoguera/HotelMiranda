@@ -92,6 +92,10 @@
     &__p--clamp{
         width: 20rem;
     }
+
+    &__p--center{
+        text-align: center;
+    }
     
     &__span{
         text-align: center;
@@ -138,6 +142,7 @@
 
     &__input{
         background: transparent;
+        width: 100%;
         font-size: 1.4rem;
         font-family: $font__family--extra;
         color: $font__color--text-medium;
@@ -197,6 +202,10 @@
         align-items: flex-start;
     }
 
+    &__flex--stretch{
+        align-items: stretch;
+    }
+
     &__flex--spaceBetween{
         justify-content: space-between;
     }
@@ -244,10 +253,10 @@
 
     &__frame{
         min-height: 30rem;
+        width: 100%;
     }
 
     &__swiperContainer{
-        
         width: 100%;
         position: relative;
     }
@@ -314,6 +323,7 @@
 }
 
 .section--twoColors{
+    margin-top: 2em;
     height: 85rem;
     background: $bg__color--dark;
     &::before {
