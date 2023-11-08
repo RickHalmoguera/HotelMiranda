@@ -255,6 +255,10 @@
   width: 12rem;
   height: 12rem;
 }
+.section__img--smaller {
+  width: 80px;
+  height: 80px;
+}
 .section__img--positionMove {
   position: absolute;
   right: -3rem;
@@ -340,6 +344,9 @@
   display: flex;
   gap: 1em;
   order: 2;
+}
+.section__padding {
+  padding: 2em;
 }
 
 .section--bgAlt {
@@ -686,17 +693,12 @@
   background-image: url("../images/footerBg.png");
   z-index: 0;
 }
-.footer::before {
-  content: "";
-  background-color: rgba(211, 211, 211, 0.753);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
 
+@media only screen and (min-width: 1000px) {
+  .footer {
+    padding: 12em 20%;
+  }
+}
 html {
   font-size: 10px;
 }

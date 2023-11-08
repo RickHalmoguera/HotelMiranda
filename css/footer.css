@@ -1,14 +1,9 @@
 .footer {
   background-image: url("../images/footerBg.png");
-  z-index: 0;
 }
-.footer::before {
-  content: "";
-  background-color: rgba(211, 211, 211, 0.753);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    padding: 12em 20%;
+  }
 }/*# sourceMappingURL=footer.css.map */

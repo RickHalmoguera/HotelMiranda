@@ -60,7 +60,6 @@
     }
 
     &__h4{
-        
         text-align: center;
         font-family: $font__family--extra;
         font-size: 6rem;
@@ -160,6 +159,11 @@
     &__img--small{
         width: 12rem;
         height: 12rem;
+    }
+
+    &__img--smaller{
+        width: 80px;
+        height: 80px;
     }
 
     &__img--positionMove{
@@ -268,6 +272,9 @@
         order: 2;
     }
     
+    &__padding{
+        padding: 2em;
+    }
 }
 
 
@@ -315,7 +322,6 @@
 .section--centered{
     align-items: center;
     text-align: center;
-    
 }
 
 .section--fullWidth{
@@ -323,7 +329,7 @@
 }
 
 .section--twoColors{
-    margin-top: 2em;
+    margin-top: 4em;
     height: 85rem;
     background: $bg__color--dark;
     &::before {
