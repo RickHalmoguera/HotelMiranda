@@ -255,7 +255,6 @@
 }
 
 .section--noBg {
-  padding-top: 5em;
   background: #FFF;
 }
 .section--noBg::before {
@@ -285,10 +284,10 @@
 
 .section--fullWidth {
   text-align: center;
+  height: 90rem;
 }
 
 .section--twoColors {
-  margin-top: 4em;
   height: 85rem;
   background: #222;
 }
@@ -383,6 +382,7 @@
   }
   .section--fullWidth {
     padding: 5em 0;
+    height: 80rem;
   }
   .section--twoColors {
     background: linear-gradient(to right, #222 0%, #222 70%, #BEAD8E 70%);
