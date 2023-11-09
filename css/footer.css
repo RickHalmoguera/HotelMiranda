@@ -1,6 +1,6 @@
 .footer {
   background-image: url("../images/footerBg.png");
-  padding: 0 1em;
+  padding: 1em;
 }
 .footer__container--square {
   width: 8rem;
@@ -36,6 +36,9 @@
 .footer__p--regular {
   font-weight: 400;
 }
+.footer__p--clamp {
+  max-width: 27rem;
+}
 .footer__flex {
   display: flex;
   gap: 2em;
@@ -52,15 +55,21 @@
 .footer__flex--left {
   align-items: flex-start;
 }
-.footer__flex--center {
+.footer__flex--justifyCenter {
   justify-content: center;
 }
+.footer__flex--justifyBetween {
+  justify-content: space-between;
+}
+.footer__flex--alignCenter {
+  align-items: center;
+}
 .footer__ul {
-  padding: 0.7em;
+  list-style-type: none;
 }
 
 @media only screen and (min-width: 1000px) {
-  .footer {
+  .footer__clamp {
     padding: 12em 20%;
   }
   .footer__flex--columnRow {

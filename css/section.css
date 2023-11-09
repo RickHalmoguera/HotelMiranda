@@ -242,6 +242,7 @@
 
 .section--bgAlt {
   background-image: url("../images/discover.jpg");
+  background-repeat: no-repeat;
 }
 .section--bgAlt::before {
   content: "";
@@ -374,7 +375,6 @@
     -webkit-box-shadow: inset 18px 3px 33px 150px #FFFFFF;
     box-shadow: inset 18px 3px 33px 150px #ffffff;
     background-size: auto;
-    background-repeat: no-repeat;
     background-position: bottom 0 right 0;
   }
   .section--centered {

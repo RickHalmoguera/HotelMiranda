@@ -3,7 +3,11 @@
 
 .footer{
     background-image: url("../images/footerBg.png");
-    padding: 0 1em;
+    padding: 1em;
+
+    &__clamp{
+
+    }
     &__container--square{
         width: 8rem;
         height: 8rem;
@@ -44,6 +48,10 @@
         font-weight: 400;
     }
 
+    &__p--clamp{
+        max-width: 27rem;
+    }
+
     &__flex{
         display: flex;
         gap: 2em;
@@ -60,28 +68,36 @@
     &__flex--columnRow{
         flex-direction: column;
     }
+
     &__flex--left{
         align-items: flex-start;
     }
 
-    &__flex--center{
+    &__flex--justifyCenter{
         justify-content: center;
     }
 
-    &__ul{
-        
-        padding: .7em;
+    &__flex--justifyBetween{
+        justify-content: space-between;
     }
-    
 
+    &__flex--alignCenter{
+        align-items: center;
+    }
 
-  
+    &__ul{
+        list-style-type: none;
+    }
 }
+
+
 
 @media only screen and (min-width:1000px){
     .footer{
-        padding: 12em 20%;
-
+        
+        &__clamp{
+            padding: 12em 20%;
+        }
         &__flex--columnRow{
             flex-direction: row;
         }
