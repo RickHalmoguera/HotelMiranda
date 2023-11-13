@@ -1,82 +1,17 @@
 .nav {
   background-color: #FFF;
+  padding: 2em;
   display: flex;
   align-items: center;
-  gap: 1em;
-  padding: 1em;
-  font-family: "Archivo", sans-serif;
-  color: #111;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
-  z-index: 10;
+  gap: 2em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
 }
-.nav__icon {
-  width: 1.6rem;
-}
-.nav__container--flex {
-  display: flex;
-  gap: 0.3em;
-}
-.nav__container--square {
-  width: 3.6rem;
-  height: 3.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
-}
-.nav__p--big {
-  font-size: 2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.nav__container--flexColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1.3rem;
-  letter-spacing: 2.6px;
-  text-transform: uppercase;
-}
-.nav__p--dark {
-  font-weight: 700;
-}
-.nav__p--light {
-  font-weight: 400;
-}
-.nav__ul--row {
-  display: none;
-}
-.nav__ul--column {
-  position: absolute;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  gap: 1em;
-  padding: 2em 1em;
-  background-color: #FFF;
-  z-index: 10;
-}
-.nav__li {
-  font-family: "Archivo", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-.nav__container--icons {
+.nav__iconContainer {
   display: flex;
   gap: 2em;
   margin-left: auto;
 }
-
-@media only screen and (min-width: 1000px) {
-  .nav {
-    width: 100%;
-  }
-  .nav__icon {
-    display: none;
-  }
-  .nav__ul--row {
-    display: flex;
-    gap: 1em;
-    list-style: none;
-  }
+.nav__icon {
+  width: 2.4rem;
+  height: 2.4rem;
 }/*# sourceMappingURL=nav.css.map */

@@ -1,61 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
-.nav {
-  background-color: #FFF;
-  padding: 2em;
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
-}
-.nav__iconContainer {
-  display: flex;
-  gap: 2em;
-  margin-left: auto;
-}
-.nav__icon {
-  width: 2.4rem;
-  height: 2.4rem;
-}
-
-.logo {
-  display: flex;
-  gap: 1em;
-  align-items: center;
-}
-.logo__square {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  padding: 1em;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
-}
-.logo__square__light {
-  background-color: #FFF;
-}
-.logo__span {
-  text-transform: uppercase;
-  font-family: "Archivo", sans-serif;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 4.3rem;
-}
-.logo__text {
-  color: #111;
-  font-family: "Archivo", sans-serif;
-  font-size: 2.6rem;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 2.6px;
-  text-transform: uppercase;
-}
-.logo__p--regular {
-  font-weight: 400;
-}
-.logo__p--bold {
-  font-weight: 700;
-}
-
 .heroSection {
   text-align: left;
   padding: 8em 1em;
@@ -120,18 +62,4 @@
   border: 2px solid rgba(255, 255, 255, 0.33);
   background-color: transparent;
   margin-bottom: 5em;
-}
-
-html {
-  font-size: 10px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-width: 320px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=heroSection.css.map */

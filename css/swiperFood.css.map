@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/swiperFood.scss","../sass/variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;EAEA;;AAEA;EACI;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI,OCnBoB;;ADuBxB;EACI,kBCnCS;EDoCT,OC7BkB;;ADgCtB;EACI;;AAGJ;EACI,OCrCkB;;ADwCtB;EACI;EACA;EACA;EACA;;AAGJ;EACI,kBCnDW;EDoDX,OCjDkB;EDkDlB;EACA;EACA;;AAEJ;EACI,kBC7DW;ED8DX,OCpDoB;EDqDpB;EACA;;;AAMR;EAGQ;IACI;;EAGJ;IACI;;EAGJ;IACI","file":"swiperFood.css"}
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"swiperFood.css"}

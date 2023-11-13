@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-@import "./header.scss";
 @import "./nav.scss";
-@import "./section.scss";
-@import "./swiperRoom.scss";
-@import "./swiperCore.scss";
-@import "./swiperFood.scss";
-@import "./swiperFoodPhotos.scss";
-@import "./footer.scss";
+@import "./logo.scss";
+@import "./heroSection.scss";
 
 html{
     font-size: 10px;
@@ -23,4 +18,4 @@ html{
 body { 
     min-width: 320px ;
 }
-         
+          

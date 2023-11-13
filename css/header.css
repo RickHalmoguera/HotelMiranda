@@ -1,26 +1,12 @@
-.header__p {
-  display: none;
+.nav {
+  background-color: #FFF;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
-
-@media only screen and (min-width: 1000px) {
-  .header {
-    padding: 1em 10em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-    height: 8rem;
-    background-color: #222;
-    color: #FFF;
-    font-family: "Roboto", sans-serif;
-    text-align: left;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    position: relative;
-  }
-  .header__p {
-    display: block;
-  }
+.nav__iconContainer {
+  display: flex;
+  gap: 2em;
+  margin-left: auto;
 }/*# sourceMappingURL=header.css.map */
