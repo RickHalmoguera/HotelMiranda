@@ -1,21 +1,20 @@
 @import "./variables.scss";
 @import "./button.scss";
 
-.heroSection{
-    text-align: left;
-    padding: 8em 1em;
+.aboutSection{
     display: flex;
     flex-direction: column;
     gap: 3em;
-    z-index: 0;
+    align-items: center;
+    padding: 8em 1em;
+    background-image: url("../images/discover.jpg");
+    background-repeat: no-repeat;
     position: relative;
-    background-image: url("../images/home.jpg");
-    background-position: center center;
-    background-size: cover;
-    
+    z-index: 0;
+
     &::before {
         content: "";
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.753);
         position: absolute;
         top: 0;
         left: 0;
@@ -31,7 +30,7 @@
         line-height: 1.8rem; 
         letter-spacing: 2.8px;
         text-transform: uppercase;
-        color: $font__color--text-light;
+        color: $font__color--text-medium;
     }
 
     &__h1{
@@ -40,7 +39,16 @@
         font-weight: 400;
         line-height: 6rem;
         letter-spacing: -1.2px;
-        color: $font__color--text-light;
+        color: $font__color--text-darkest;
+    }
+
+    &__p{
+        color: $font__color--text-medium;
+        font-family:$font__family--main;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.4rem;
     }
 
     &__button--dark{
@@ -49,9 +57,11 @@
         border: none;
     }
 
-    &__button--light{
-        @include button();
-        background-color: transparent;
-        margin-bottom: 5em;
+    &__container--flex{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
     }
+
+
 }

@@ -61,7 +61,7 @@
   padding: 8em 1em;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
   z-index: 0;
   position: relative;
   background-image: url("../images/home.jpg");
@@ -120,6 +120,115 @@
   border: 2px solid rgba(255, 255, 255, 0.33);
   background-color: transparent;
   margin-bottom: 5em;
+}
+
+.calendarSection {
+  background-color: #222;
+  padding: 4em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.calendarSection__inputsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.calendarSection__label {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.calendarSection__input {
+  background: transparent;
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #777;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  padding-bottom: 0.5em;
+}
+.calendarSection__button--dark {
+  width: 21rem;
+  height: 6rem;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: #BEAD8E;
+  border: none;
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  padding: 8em 1em;
+  background-image: url("../images/discover.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+.aboutSection::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.753);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.aboutSection__h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777;
+}
+.aboutSection__h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+  color: #111;
+}
+.aboutSection__p {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.aboutSection__button--dark {
+  width: 21rem;
+  height: 6rem;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  background-color: #BEAD8E;
+  border: none;
+}
+.aboutSection__container--flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
 }
 
 html {

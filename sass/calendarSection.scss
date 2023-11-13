@@ -1,0 +1,44 @@
+@import "./variables.scss";
+@import "./button.scss";
+
+.calendarSection{
+    background-color: $bg__color--dark;
+    padding: 4em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+
+    &__inputsContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    &__label{
+        color: $font__color--text-light;
+        font-family: $font__family--extra;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__input{
+        background: transparent;
+        width: 100%;
+        font-size: 1.4rem;
+        font-family: $font__family--extra;
+        color: $font__color--text-medium;
+        border: none;
+        border-bottom: 2px solid $btn__color--dark;
+        padding-bottom: .5em;
+    }
+
+    &__button--dark{
+        @include button();
+        background-color: $btn__color--dark;
+        border: none;
+    }
+
+
+}

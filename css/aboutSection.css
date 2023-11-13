@@ -1,18 +1,17 @@
-.heroSection {
-  text-align: left;
-  padding: 8em 1em;
+.aboutSection {
   display: flex;
   flex-direction: column;
   gap: 3em;
-  z-index: 0;
+  align-items: center;
+  padding: 8em 1em;
+  background-image: url("../images/discover.jpg");
+  background-repeat: no-repeat;
   position: relative;
-  background-image: url("../images/home.jpg");
-  background-position: center center;
-  background-size: cover;
+  z-index: 0;
 }
-.heroSection::before {
+.aboutSection::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.753);
   position: absolute;
   top: 0;
   left: 0;
@@ -20,24 +19,32 @@
   height: 100%;
   z-index: -1;
 }
-.heroSection__h2 {
+.aboutSection__h2 {
   font-family: "Archivo", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.8rem;
   letter-spacing: 2.8px;
   text-transform: uppercase;
-  color: #FFF;
+  color: #777;
 }
-.heroSection__h1 {
+.aboutSection__h1 {
   font-family: "Old Standard TT", serif;
   font-size: 5.6rem;
   font-weight: 400;
   line-height: 6rem;
   letter-spacing: -1.2px;
-  color: #FFF;
+  color: #111;
 }
-.heroSection__button--dark {
+.aboutSection__p {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.aboutSection__button--dark {
   width: 21rem;
   height: 6rem;
   color: #FFF;
@@ -50,16 +57,8 @@
   background-color: #BEAD8E;
   border: none;
 }
-.heroSection__button--light {
-  width: 21rem;
-  height: 6rem;
-  color: #FFF;
-  font-family: "Archivo", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  border: 2px solid rgba(255, 255, 255, 0.33);
-  background-color: transparent;
-  margin-bottom: 5em;
-}/*# sourceMappingURL=heroSection.css.map */
+.aboutSection__container--flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}/*# sourceMappingURL=aboutSection.css.map */
