@@ -35,6 +35,15 @@ const swiperCore = new Swiper(".swiperCore", {
   }
 })
 
+const swiperPaginationGrid = new Swiper(".swiperPagination",{
+  slidesPerView:1,
+  spaceBetween: 30,
+  loop: true,
+
+  pagination:{
+    el:".swiperPagination__bullets",
+  },
+})
 
 const swiperFood = new Swiper(".swiperFood",{
   slidesPerView: 1,

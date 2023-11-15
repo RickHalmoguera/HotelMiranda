@@ -172,7 +172,7 @@
   flex-direction: column;
   gap: 3em;
   align-items: center;
-  padding: 8em 1em;
+  padding: 8em 1em 0 1em;
   background-image: url("../images/discover.jpg");
   background-repeat: no-repeat;
   background-position: top right;
@@ -269,7 +269,7 @@
   flex-direction: column;
   gap: 3em;
   align-items: center;
-  padding: 8em 0;
+  padding: 8em 0 0 0;
   text-align: center;
 }
 .roomSection__h2 {
@@ -360,6 +360,92 @@
   margin-bottom: 5em;
 }
 
+.videoSection {
+  background-color: #222;
+  padding: 8em 1em 3em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  height: 85rem;
+}
+.videoSection__h2 {
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.videoSection__h1 {
+  color: #FFF;
+  font-family: "Old Standard TT", serif;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+}
+.videoSection__p {
+  color: #C2C2C2;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.videoSection__video {
+  width: 100%;
+  height: 50%;
+}
+
+.facilitiesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  align-items: center;
+  padding: 8em 1em 0 1em;
+  text-align: center;
+}
+.facilitiesSection__h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777;
+}
+.facilitiesSection__h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 5.6rem;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: -1.2px;
+  color: #111;
+}
+
+.button {
+  width: 21rem;
+  height: 6rem;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+}
+.button--dark {
+  background-color: #BEAD8E;
+  border: none;
+}
+.button--light {
+  background-color: transparent;
+  margin-bottom: 5em;
+}
+
 .swiperCore {
   margin-top: -5.5em;
   width: 100%;
@@ -389,6 +475,60 @@
 .swiperCore__button--next {
   background-color: #BEAD8E;
   color: #FFF;
+}
+
+.swiperPagination {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+  width: 100%;
+}
+.swiperPagination__wrapper {
+  width: 100%;
+  max-width: 40rem;
+  height: 37rem;
+  height: 30rem;
+}
+.swiperPagination__slide {
+  display: flex;
+  padding-top: 8em;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+  text-align: left;
+  position: relative;
+}
+.swiperPagination__span {
+  color: rgba(34, 34, 34, 0.04);
+  font-family: "Archivo", sans-serif;
+  font-size: 12rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.swiperPagination__h3 {
+  color: #111;
+  font-family: "Old Standard TT", serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: -0.9px;
+}
+.swiperPagination__p {
+  color: #777;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.swiperPagination__bullets {
+  --swiper-pagination-color:#BEAD8E;
 }
 
 html {
