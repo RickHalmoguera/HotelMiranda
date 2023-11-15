@@ -36,4 +36,29 @@
   line-height: 6rem;
   letter-spacing: -1.2px;
   color: #FFF;
+}
+.heroSection__links {
+  width: 15rem;
+  background-color: #FFF;
+  padding: 2em;
+  margin-left: auto;
+  position: relative;
+  bottom: -8rem;
+}
+.heroSection__p {
+  text-align: center;
+  color: #BEAD8E;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.heroSection__a {
+  color: #111;
+  text-decoration: none;
+}
+.heroSection__a:visited {
+  color: #111;
 }/*# sourceMappingURL=heroSection.css.map */
