@@ -32,6 +32,9 @@
   top: 0;
   right: 0;
 }
+.swiperCore__img {
+  width: 100%;
+}
 .swiperCore__h3 {
   color: #111;
   font-family: "Old Standard TT", serif;
