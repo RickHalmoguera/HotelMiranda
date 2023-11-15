@@ -52,6 +52,26 @@ const swiperPaginationGrid = new Swiper(".swiperPagination",{
   },
 })
 
+const swiperPaginationFlex = new Swiper(".swiperFlex",{
+  slidesPerView:1,
+  spaceBetween: 30,
+  loop: true,
+  breakpoints:{
+    750:{
+      loop: true,
+      slidesPerView: 2,
+    },
+    1000:{
+      slidesPerView: 3,
+    }
+    
+  },
+
+  pagination:{
+    el:".swiperFlex__bullets",
+  },
+})
+
 const swiperColumn = new Swiper(".swiperColumn",{
   slidesPerView: 1,
   loop: true,

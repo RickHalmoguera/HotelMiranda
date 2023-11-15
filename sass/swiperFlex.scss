@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
- .swiperPagination{
+ .swiperFlex{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +9,7 @@
     
   
 
-    &__img--big{
+    &__img{
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -21,13 +21,7 @@
     }
 
     &__slide{
-        display: flex;
-        padding-top:8em ;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 2em;
-        text-align: left;
-        position: relative;
+        width: 100%;
     }
 
     &__span{
@@ -61,9 +55,10 @@
         line-height: 2.4rem;
     }
 
-    &__bullets, &__bullets--photo{
+    &__bullets{
         --swiper-pagination-color:#BEAD8E;
-        align-self: center;
+        text-align: center;
+       
     }
 
 }

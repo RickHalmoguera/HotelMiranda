@@ -1,30 +1,24 @@
-.swiperPagination {
+.swiperFlex {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2em;
   width: 100%;
 }
-.swiperPagination__img--big {
+.swiperFlex__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
 }
-.swiperPagination__wrapper {
+.swiperFlex__wrapper {
   height: 37rem;
   width: 100%;
 }
-.swiperPagination__slide {
-  display: flex;
-  padding-top: 8em;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2em;
-  text-align: left;
-  position: relative;
+.swiperFlex__slide {
+  width: 100%;
 }
-.swiperPagination__span {
+.swiperFlex__span {
   color: rgba(34, 34, 34, 0.04);
   font-family: "Archivo", sans-serif;
   font-size: 12rem;
@@ -35,7 +29,7 @@
   top: 0;
   right: 0;
 }
-.swiperPagination__h3 {
+.swiperFlex__h3 {
   color: #111;
   font-family: "Old Standard TT", serif;
   font-size: 3rem;
@@ -44,7 +38,7 @@
   line-height: 3rem;
   letter-spacing: -0.9px;
 }
-.swiperPagination__p {
+.swiperFlex__p {
   color: #777;
   font-family: "Archivo", sans-serif;
   font-size: 1.4rem;
@@ -52,7 +46,7 @@
   font-weight: 400;
   line-height: 2.4rem;
 }
-.swiperPagination__bullets, .swiperPagination__bullets--photo {
+.swiperFlex__bullets {
   --swiper-pagination-color:#BEAD8E;
-  align-self: center;
-}/*# sourceMappingURL=swiperPagination.css.map */
+  text-align: center;
+}/*# sourceMappingURL=swiperFlex.css.map */
