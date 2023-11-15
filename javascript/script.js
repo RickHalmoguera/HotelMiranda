@@ -39,37 +39,36 @@ const swiperPaginationGrid = new Swiper(".swiperPagination",{
   slidesPerView:1,
   spaceBetween: 30,
   loop: true,
+  breakpoints:{
+    750:{
+      loop: true,
+      slidesPerView: 2,
+    }
+    
+  },
 
   pagination:{
     el:".swiperPagination__bullets",
   },
 })
 
-const swiperFood = new Swiper(".swiperFood",{
+const swiperColumn = new Swiper(".swiperColumn",{
   slidesPerView: 1,
   loop: true,
+  spaceBetween:30,
   grid:{
     fill:"row",
     rows:3,
   },
   navigation: {
-    nextEl: '.swiperFood__button--next',
-    prevEl: '.swiperFood__button--prev',
-  },
-  breakpoints:{
-    1200:{
-      slidesPerView: 2,
-      grid:{
-        fill:"row",
-        rows:3,
-      }
-    }
+    nextEl: '.swiperColumn__button--next',
+    prevEl: '.swiperColumn__button--prev',
   },
 })
 
 const swiperFoodPhotos = new Swiper (".swiperFoodPhotos",{
   slidesPerView:1,
-  spaceBetween: 30,
+  
   loop: true,
 
   pagination:{

@@ -8,9 +8,11 @@
 @import "./roomSection.scss";
 @import "./videoSection.scss";
 @import "./facilitiesSection.scss";
+@import "./sectionMenu.scss";
 @import "./button.scss";
 @import "./swiperCore.scss";
 @import "./swiperPagination.scss";
+@import "./swiperColumn.scss";
 
 
 html{
@@ -21,7 +23,6 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body { 
