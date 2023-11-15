@@ -9,6 +9,7 @@
     padding: 8em 1em;
     background-image: url("../images/discover.jpg");
     background-repeat: no-repeat;
+    background-position: top right;
     position: relative;
     z-index: 0;
 
@@ -42,6 +43,20 @@
         color: $font__color--text-darkest;
     }
 
+    &__h3{
+        text-align: center;
+        font-family: $font__family--sec;
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 3rem;
+        letter-spacing: -0.9px;
+        z-index: 2;
+    }
+
+    &__h3--light{
+        color:$font__color--text-light;
+    }
+
     &__p{
         color: $font__color--text-medium;
         font-family:$font__family--main;
@@ -51,17 +66,49 @@
         line-height: 2.4rem;
     }
 
-    &__button--dark{
-        @include button();
-        background-color: $btn__color--dark;
-        border: none;
-    }
-
-    &__container--flex{
+    &__flex{
+        max-width: 40rem;
         display: flex;
         flex-direction: column;
         gap: 3em;
     }
 
+    &__container{
+        max-width: 27rem;
+        
+        height: 30rem;
+    }
+
+    &__container--text{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        text-align: center;
+    }
+
+    &__container--dark{
+        background-color: $bg__color--dark;
+    }
+
+    &__icon{
+        z-index: 2;
+    }
+
+    &__shadow{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        z-index: 1;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
 
 }

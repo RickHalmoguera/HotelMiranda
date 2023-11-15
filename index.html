@@ -24,12 +24,13 @@
                  <img src="./icons/user.svg" alt="user" class="nav__icon">
                  <img src="./icons/search.svg" alt="search" class="nav__icon">
              </div>
+        </nav>
     </header>
     <section class="heroSection">
         <h2 class="heroSection__h2">the ultimate luxury experience</h2>
         <h1 class="heroSection__h1">The Perfect Base For You</h1>
-        <button class="heroSection__button--dark">take a tour</button>
-        <button class="heroSection__button--light">learn more</button>
+        <button class="button button--dark">take a tour</button>
+        <button class="button button--light">learn more</button>
     </section>
     <section class="calendarSection">
         <div class="calendarSection__inputsContainer">
@@ -38,31 +39,88 @@
             <label for="departureDate" class="calendarSection__label">Departure Date</label>
             <input type="date" name="" id="departureDate" class="calendarSection__input">
         </div>
-        <button class="calendarSection__button--dark">check avaliability</button>
+        <button class="button button--dark">check avaliability</button>
     </section>
+
     <section class="aboutSection">
-        <div class="aboutSection__container--flex">
+        <div class="aboutSection__flex">
             <h2 class="aboutSection__h2">about us</h2>
             <h1 class="aboutSection__h1">Discovey Our Underground</h1>
             <p class="aboutSection__p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <button class="aboutSection__button--dark">book now</button>
+            <button class="button button--dark">book now</button>
         </div>
-        <div class="aboutSection__container--grid">
-            <div class="aboutSection__container--img">
+        
+        <div class="aboutSection__grid">
+            <div class="aboutSection__container --img">
                 <img src="./images/about1.jpg" alt="" class="aboutSection__img">
             </div>
-            <div class="aboutSection__container--img">
+            <div class="aboutSection__container aboutSection__container--text">
+                <img src="./icons/teamIcon.svg" alt="" class="aboutSection__icon">
+                <img src="./icons/teamIconShadow.svg" alt="" class="aboutSection__shadow">
+                <h3 class="aboutSection__h3">Strong Team</h3>
+                <p class="aboutSection__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div class="aboutSection__container aboutSection__container--img">
                 <img src="./images/about2.jpg" alt="" class="aboutSection__img">
             </div>
-
-
+            <div class="aboutSection__container aboutSection__container--text aboutSection__container--dark">
+                <img src="./icons/calendarIcon.svg" alt="" class="aboutSection__icon">
+                <h3 class="aboutSection__h3 aboutSection__h3--light">Luxury Room</h3>
+                <p class="aboutSection__p aboutSection__p--light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
         </div>
-
-        </button>
     </section>
 
-   </nav>
+    <section class="roomSection">
+        <h2 class="roomSection__h2">rooms</h2>
+        <h1 class="roomSection__h1">Hand Picked Rooms</h1>
+        <div class="roomSection__swiperTop">
+             <img src="./icons/bed.svg" alt="" class="swiper__icon">
+             <img src="./icons/wifi.svg" alt="" class="swiper__icon">
+             <img src="./icons/parking.svg" alt="" class="swiper__icon">
+             <img src="./icons/cold.svg" alt="" class="swiper__icon">
+             <img src="./icons/gym.svg" alt="" class="swiper__icon">
+             <img src="./icons/smoking.svg" alt="" class="swiper__icon">
+             <img src="./icons/cocktail.svg" alt="" class="swiper__icon">
+        </div>
+        <div class="swiper swiperCore">
+            <div class="swiper-wrapper swiperCore__wrapper">
+              <div class="swiper-slide">
+                <img src="./images/room1.jpg" alt="" class="swiperCore__img">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/room2.jpg" alt="" class="swiperCore__img">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/room3.jpg" alt="" class="swiperCore__img">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/room4.jpg" alt="" class="swiperCore__img">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/room5.jpg" alt="" class="swiperCore__img">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/room6.jpg" alt="" class="swiperCore__img">
+            </div>
+            
+            </div>
+            <div class="swiper-button-next swiperCore__button swiperCore__button--next"></div>
+            <div class="swiper-button-prev swiperCore__button swiperCore__button--prev"></div>
+        </div>
+
+        <div class="roomSection__swiperBottom">
+            <h3 class="roomSection__h3">Minimal Duplex Room</h3>
+            <p class="roomSection__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <p class="roomSection__p--highlight">$345<span class="roomSection__span">/Night</span></p>
+        </div>
+
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./javascript/script.js"></script>
+</body>
 </html>

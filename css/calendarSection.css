@@ -1,3 +1,23 @@
+.button {
+  width: 21rem;
+  height: 6rem;
+  color: #FFF;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+}
+.button--dark {
+  background-color: #BEAD8E;
+  border: none;
+}
+.button--light {
+  background-color: transparent;
+  margin-bottom: 5em;
+}
+
 .calendarSection {
   background-color: #222;
   padding: 4em 1em;
@@ -27,17 +47,4 @@
   border: none;
   border-bottom: 2px solid #BEAD8E;
   padding-bottom: 0.5em;
-}
-.calendarSection__button--dark {
-  width: 21rem;
-  height: 6rem;
-  color: #FFF;
-  font-family: "Archivo", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  border: 2px solid rgba(255, 255, 255, 0.33);
-  background-color: #BEAD8E;
-  border: none;
 }/*# sourceMappingURL=calendarSection.css.map */

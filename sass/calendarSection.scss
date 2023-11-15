@@ -34,11 +34,5 @@
         padding-bottom: .5em;
     }
 
-    &__button--dark{
-        @include button();
-        background-color: $btn__color--dark;
-        border: none;
-    }
-
 
 }

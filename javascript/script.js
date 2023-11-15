@@ -20,13 +20,13 @@ const handleMenu = () =>{
   }
 }
 
-const swiperRoom = new Swiper(".swiperRoom", {
+const swiperCore = new Swiper(".swiperCore", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop:true,
   navigation: {
-    nextEl: '.swiperRoom__button--next',
-    prevEl: '.swiperRoom__button--prev',
+    nextEl: '.swiperCore__button--next',
+    prevEl: '.swiperCore__button--prev',
   },
   breakpoints:{
     1000:{
@@ -35,24 +35,6 @@ const swiperRoom = new Swiper(".swiperRoom", {
   }
 })
 
-const swiperCore = new Swiper(".swiperCore",{
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination:{
-    el:".swiperCore__pagination",
-  },
-  breakpoints:{
-    1000:{
-      slidesPerView: 3,
-      
-      grid:{
-        fill:"row",
-        rows:2,
-      }
-    }
-  }
-})
 
 const swiperFood = new Swiper(".swiperFood",{
   slidesPerView: 1,

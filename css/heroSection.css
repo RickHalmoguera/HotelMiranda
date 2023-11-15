@@ -36,30 +36,4 @@
   line-height: 6rem;
   letter-spacing: -1.2px;
   color: #FFF;
-}
-.heroSection__button--dark {
-  width: 21rem;
-  height: 6rem;
-  color: #FFF;
-  font-family: "Archivo", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  border: 2px solid rgba(255, 255, 255, 0.33);
-  background-color: #BEAD8E;
-  border: none;
-}
-.heroSection__button--light {
-  width: 21rem;
-  height: 6rem;
-  color: #FFF;
-  font-family: "Archivo", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  border: 2px solid rgba(255, 255, 255, 0.33);
-  background-color: transparent;
-  margin-bottom: 5em;
 }/*# sourceMappingURL=heroSection.css.map */

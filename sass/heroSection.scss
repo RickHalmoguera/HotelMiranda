@@ -1,5 +1,4 @@
 @import "./variables.scss";
-@import "./button.scss";
 
 .heroSection{
     text-align: left;
@@ -41,17 +40,5 @@
         line-height: 6rem;
         letter-spacing: -1.2px;
         color: $font__color--text-light;
-    }
-
-    &__button--dark{
-        @include button();
-        background-color: $btn__color--dark;
-        border: none;
-    }
-
-    &__button--light{
-        @include button();
-        background-color: transparent;
-        margin-bottom: 5em;
     }
 }
