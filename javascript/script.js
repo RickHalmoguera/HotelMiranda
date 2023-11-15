@@ -1,6 +1,6 @@
 
 const menuBtn = document.getElementById("menuBtn")
-const navUl = document.getElementById("navUlColumn")
+const navUl = document.getElementById("dropMenu")
 
 const xSrc = "./icons/close.svg"
 const menuSrc ="./icons/Menu.svg"

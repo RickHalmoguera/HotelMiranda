@@ -1,12 +1,25 @@
-.nav {
+.header {
+  position: relative;
+}
+.header__dropMenu {
+  width: 100%;
+  position: absolute;
   background-color: #FFF;
   padding: 2em;
-  display: flex;
-  align-items: center;
-  gap: 2em;
+  z-index: 5;
+  display: none;
 }
-.nav__iconContainer {
+.header__ul {
+  list-style: none;
   display: flex;
-  gap: 2em;
-  margin-left: auto;
+  flex-direction: column;
+  gap: 1em;
+}
+.header__li {
+  color: #111;
+  font-family: "Archivo", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }/*# sourceMappingURL=header.css.map */
