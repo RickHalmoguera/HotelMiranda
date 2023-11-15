@@ -4,14 +4,18 @@
   align-items: center;
 }
 .logo__square {
+  width: 8rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
-  align-self: center;
-  padding: 1em;
+  align-items: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
 }
-.logo__square__light {
+.logo__square--light {
   background-color: #FFF;
+}
+.logo__square--highlight {
+  background-color: #BEAD8E;
 }
 .logo__span {
   text-transform: uppercase;

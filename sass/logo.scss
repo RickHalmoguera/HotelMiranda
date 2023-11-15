@@ -6,14 +6,19 @@
     align-items: center;
 
     &__square{
+        width: 8rem;
+        height: 8rem;
         display: flex;
         justify-content: center;
-        align-self: center;
-        padding: 1em;
+        align-items: center;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.29);
     
-        &__light{
+        &--light{
             background-color: $bg__color--light;
+        }
+
+        &--highlight{
+            background-color: $bg__color--medium;
         }
     }
 
@@ -34,7 +39,6 @@
         line-height: normal;
         letter-spacing: 2.6px;
         text-transform: uppercase;
-        
     }
 
     &__p--regular{

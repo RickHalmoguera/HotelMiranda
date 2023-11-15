@@ -1,0 +1,29 @@
+.sectionDetails {
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 8em 1em 3em 1em;
+  text-align: center;
+}
+.sectionDetails__span {
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136.4%;
+}
+.sectionDetails__span--small {
+  font-size: 1.6rem;
+}
+.sectionDetails__p {
+  margin-top: -3rem;
+  color: #999;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 136.4%;
+}/*# sourceMappingURL=sectionDetails.css.map */
