@@ -26,11 +26,13 @@
 @import "./sectionRoomMain.scss";
 @import "./sectionRoomDescription.scss";
 @import "./swiperCore2Slide.scss";
+@import "./sectionOffers.scss";
+@import "./sectionPopularList.scss";
 
 html{
     font-size: 10px;
 }
- 
+  
 * { 
     box-sizing: border-box;
     margin: 0;
