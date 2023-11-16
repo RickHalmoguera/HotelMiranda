@@ -20,6 +20,9 @@
 @import "./sectionHotelDescription.scss";
 @import "./sectionCounter.scss";
 @import "./swiper2Slide.scss";
+@import "./sectionRoomList.scss";
+@import "./roomCard.scss";
+@import "./sectionControls.scss";
 
 html{
     font-size: 10px;
@@ -34,4 +37,4 @@ html{
 body { 
     min-width: 320px ;
 }
-              
+               
