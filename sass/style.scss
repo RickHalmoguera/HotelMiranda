@@ -3,7 +3,7 @@
 @import "./header.scss";
 @import "./nav.scss";
 @import "./logo.scss";
-@import "./heroSection.scss";
+@import "./sectionHero.scss";
 @import "./calendarSection.scss";
 @import "./aboutSection.scss";
 @import "./sectionRoom.scss";
@@ -23,11 +23,14 @@
 @import "./sectionRoomList.scss";
 @import "./roomCard.scss";
 @import "./sectionControls.scss";
+@import "./sectionRoomMain.scss";
+@import "./sectionRoomDescription.scss";
+@import "./swiperCore2Slide.scss";
 
 html{
     font-size: 10px;
 }
-
+ 
 * { 
     box-sizing: border-box;
     margin: 0;

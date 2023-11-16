@@ -38,7 +38,7 @@
   color: #FFF;
 }
 .sectionHero__links {
-  width: 15rem;
+  width: 20rem;
   background-color: #FFF;
   padding: 2em;
   margin-left: auto;
@@ -62,4 +62,4 @@
 }
 .sectionHero__a:visited {
   color: #111;
-}/*# sourceMappingURL=heroSection.css.map */
+}/*# sourceMappingURL=sectionHero.css.map */

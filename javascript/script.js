@@ -28,6 +28,18 @@ const swiperCore = new Swiper(".swiperCore", {
     nextEl: '.swiperCore__button--next',
     prevEl: '.swiperCore__button--prev',
   },
+  
+  
+})
+
+const swiperCore2Slide = new Swiper(".swiperCore2Slide", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop:true,
+  navigation: {
+    nextEl: '.swiperCore2Slide__button--next',
+    prevEl: '.swiperCore2Slide__button--prev',
+  },
   breakpoints:{
     1000:{
       slidesPerView: 3
@@ -41,7 +53,7 @@ const swiperPaginationGrid = new Swiper(".swiperPagination",{
   loop: true,
   breakpoints:{
     750:{
-      loop: true,
+      
       slidesPerView: 2,
     }
     
@@ -58,7 +70,7 @@ const swiper2Slide = new Swiper(".swiper2Slide",{
   loop: true,
   breakpoints:{
     750:{
-      loop: true,
+      
       slidesPerView: 2,
     }
     

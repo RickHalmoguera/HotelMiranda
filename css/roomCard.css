@@ -21,6 +21,13 @@
   line-height: 3.6rem;
   letter-spacing: -1.2px;
 }
+.roomCard__a {
+  text-decoration: none;
+  color: #777;
+}
+.roomCard__a:visited {
+  color: #777;
+}
 .roomCard__p {
   color: #777;
   font-family: "Archivo", sans-serif;

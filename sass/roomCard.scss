@@ -27,6 +27,15 @@
         letter-spacing: -1.2px;
     }
 
+    &__a{
+        text-decoration: none;
+        color: $font__color--text-medium;
+
+        &:visited{
+            color: $font__color--text-medium;
+        }
+    }
+
     &__p{
         color: $font__color--text-medium;
         font-family: $font__family--main;
@@ -44,6 +53,8 @@
             line-height: 4.3rem;
         }
     }
+
+
 
     &__span{
         font-size: 1.3rem;
