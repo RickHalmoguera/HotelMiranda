@@ -6,9 +6,9 @@
 @import "./heroSection.scss";
 @import "./calendarSection.scss";
 @import "./aboutSection.scss";
-@import "./roomSection.scss";
+@import "./sectionRoom.scss";
 @import "./videoSection.scss";
-@import "./facilitiesSection.scss";
+@import "./sectionFacilities.scss";
 @import "./sectionMenu.scss";
 @import "./button.scss";
 @import "./swiperCore.scss";
@@ -17,6 +17,7 @@
 @import "./swiperFlex.scss";
 @import "./sectionDetails.scss";
 @import "./footer.scss";
+@import "./about/sectionHotelDescription.scss";
 
 html{
     font-size: 10px;
@@ -31,4 +32,4 @@ html{
 body { 
     min-width: 320px ;
 }
-             
+              

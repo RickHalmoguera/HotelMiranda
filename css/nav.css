@@ -12,6 +12,15 @@
   margin-left: auto;
 }
 .nav__icon {
+  cursor: pointer;
   width: 2.4rem;
   height: 2.4rem;
+}
+.nav__a {
+  cursor: pointer;
+  color: #111;
+  text-decoration: none;
+}
+.nav__a:visited {
+  color: #111;
 }/*# sourceMappingURL=nav.css.map */

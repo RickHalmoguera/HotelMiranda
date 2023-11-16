@@ -335,7 +335,7 @@
   object-position: center center;
 }
 
-.sectionRoom {
+.roomSection {
   display: flex;
   flex-direction: column;
   gap: 3em;
@@ -343,7 +343,7 @@
   padding: 8em 0 0 0;
   text-align: center;
 }
-.sectionRoom__h2 {
+.roomSection__h2 {
   font-family: "Archivo", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
@@ -352,7 +352,7 @@
   text-transform: uppercase;
   color: #777;
 }
-.sectionRoom__h1 {
+.roomSection__h1 {
   font-family: "Old Standard TT", serif;
   font-size: 5.6rem;
   font-weight: 400;
@@ -360,7 +360,7 @@
   letter-spacing: -1.2px;
   color: #111;
 }
-.sectionRoom__h3 {
+.roomSection__h3 {
   color: #111;
   font-family: "Old Standard TT", serif;
   font-size: 2.8rem;
@@ -369,7 +369,7 @@
   line-height: 3.6rem;
   letter-spacing: -1.2px;
 }
-.sectionRoom__p {
+.roomSection__p {
   color: #777;
   font-family: "Archivo", sans-serif;
   font-size: 1.4rem;
@@ -377,7 +377,7 @@
   font-weight: 400;
   line-height: 2.4rem;
 }
-.sectionRoom__p--highlight {
+.roomSection__p--highlight {
   color: #BEAD8E;
   font-family: "Archivo", sans-serif;
   font-size: 3.2rem;
@@ -385,22 +385,21 @@
   font-weight: 700;
   line-height: 4.3rem;
 }
-.sectionRoom__span {
+.roomSection__span {
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 4.3rem;
 }
-.sectionRoom__swiperTop {
+.roomSection__swiperTop {
   z-index: 3;
   width: 70%;
   background-color: #FFF;
   display: flex;
   justify-content: space-between;
   padding: 2em;
-  margin-bottom: -5.5rem;
 }
-.sectionRoom__swiperBottom {
+.roomSection__swiperBottom {
   margin-top: -5.5rem;
   z-index: 3;
   width: 70%;
@@ -472,7 +471,7 @@
   height: 50%;
 }
 
-.sectionFacilities {
+.facilitiesSection {
   display: flex;
   flex-direction: column;
   gap: 3em;
@@ -480,10 +479,7 @@
   padding: 8em 1em 0 1em;
   text-align: center;
 }
-.sectionFacilities--dark {
-  background-color: #222;
-}
-.sectionFacilities__h2 {
+.facilitiesSection__h2 {
   font-family: "Archivo", sans-serif;
   font-size: 1.3rem;
   font-weight: 700;
@@ -492,19 +488,13 @@
   text-transform: uppercase;
   color: #777;
 }
-.sectionFacilities__h2--light {
-  color: #FFF;
-}
-.sectionFacilities__h1 {
+.facilitiesSection__h1 {
   font-family: "Old Standard TT", serif;
   font-size: 5.6rem;
   font-weight: 400;
   line-height: 6rem;
   letter-spacing: -1.2px;
   color: #111;
-}
-.sectionFacilities__h1--light {
-  color: #FFF;
 }
 
 .sectionMenu {
@@ -598,7 +588,6 @@
 }
 .swiperCore__img {
   width: 100%;
-  height: 100%;
 }
 .swiperCore__h3 {
   color: #111;
@@ -628,21 +617,17 @@
   gap: 2em;
   width: 100%;
 }
-.swiperPagination--dark {
-  background-color: #292929;
-}
-.swiperPagination__img {
-  transition: 0.5s;
-}
-.swiperPagination__img:hover {
-  scale: 1.2;
+.swiperPagination__img--big {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 .swiperPagination__wrapper {
   height: 37rem;
   width: 100%;
 }
 .swiperPagination__slide {
-  padding: 1em;
   display: flex;
   padding-top: 8em;
   flex-direction: column;
@@ -662,9 +647,6 @@
   top: 0;
   right: 0;
 }
-.swiperPagination__span--dark {
-  color: #111;
-}
 .swiperPagination__h3 {
   color: #111;
   font-family: "Old Standard TT", serif;
@@ -674,9 +656,6 @@
   line-height: 3rem;
   letter-spacing: -0.9px;
 }
-.swiperPagination__h3--light {
-  color: #FFF;
-}
 .swiperPagination__p {
   color: #777;
   font-family: "Archivo", sans-serif;
@@ -684,9 +663,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
-}
-.swiperPagination__p--light {
-  color: #FFF;
 }
 .swiperPagination__bullets, .swiperPagination__bullets--photo {
   --swiper-pagination-color:#BEAD8E;
@@ -939,84 +915,11 @@
 }
 
 .sectionHotelDescription {
-  padding: 8em 1em;
   display: flex;
   flex-direction: column;
   gap: 3em;
   z-index: 0;
   position: relative;
-}
-.sectionHotelDescription__video {
-  width: 100%;
-  height: 27rem;
-}
-.sectionHotelDescription__restaurant {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-.sectionHotelDescription__h1 {
-  color: #111;
-  text-align: center;
-  font-family: "Old Standard TT", serif;
-  font-size: 3.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -1.16px;
-}
-.sectionHotelDescription__h1--left {
-  text-align: left;
-}
-.sectionHotelDescription__h2 {
-  color: #777;
-  font-family: "Archivo", sans-serif;
-  font-size: 1.4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-}
-.sectionHotelDescription__icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.sectionHotelDescription__item {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  align-items: center;
-  justify-content: center;
-  width: 15rem;
-  height: 15rem;
-  text-align: center;
-}
-.sectionHotelDescription__span {
-  color: #111;
-  text-align: center;
-  font-family: "Archivo", sans-serif;
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.4rem;
-  letter-spacing: 2.4px;
-  text-transform: uppercase;
-}
-.sectionHotelDescription__p {
-  color: #777;
-  font-family: "Archivo", sans-serif;
-  font-size: 1.4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.4rem;
-}
-.sectionHotelDescription__img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center center;
 }
 
 html {

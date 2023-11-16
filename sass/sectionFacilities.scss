@@ -1,12 +1,16 @@
 @import "./variables.scss";
 
-.facilitiesSection{
+.sectionFacilities{
     display: flex;
     flex-direction: column;
     gap: 3em;
     align-items: center;
     padding: 8em 1em 0 1em;
     text-align: center;
+
+    &--dark{
+        background-color: $bg__color--dark;
+    }
 
     &__h2{
         font-family: $font__family--main;
@@ -16,6 +20,10 @@
         letter-spacing: 2.8px;
         text-transform: uppercase;
         color: $font__color--text-medium;
+
+        &--light{
+            color: $font__color--text-light;
+        }
     }
 
     &__h1{
@@ -25,6 +33,10 @@
         line-height: 6rem;
         letter-spacing: -1.2px;
         color: $font__color--text-darkest;
+
+        &--light{
+            color: $font__color--text-light;
+        }
     }
 
 

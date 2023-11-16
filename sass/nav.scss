@@ -15,8 +15,19 @@
     }
 
     &__icon{
+        cursor: pointer;
         width: 2.4rem;
         height: 2.4rem;
+    }
+
+    &__a{
+        cursor: pointer;
+        color:$font__color--text-darkest;
+        text-decoration: none;
+
+        &:visited{
+            color:$font__color--text-darkest
+        }
     }
 
 }

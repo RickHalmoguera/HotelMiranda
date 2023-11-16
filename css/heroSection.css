@@ -56,6 +56,7 @@
   letter-spacing: -0.48px;
 }
 .heroSection__a {
+  cursor: pointer;
   color: #111;
   text-decoration: none;
 }
