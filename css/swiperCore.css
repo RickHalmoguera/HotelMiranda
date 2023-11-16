@@ -53,6 +53,19 @@
   font-weight: 400;
   line-height: 2.4rem;
 }
-.swiperCore__bullets {
-  --swiper-pagination-color:#BEAD8E;
+.swiperCore__button {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  --swiper-navigation-size: 1.2rem;
+}
+.swiperCore__button--next {
+  background-color: #BEAD8E;
+  color: #FFF;
+}
+.swiperCore__button--prev {
+  background-color: #FFF;
 }/*# sourceMappingURL=swiperCore.css.map */

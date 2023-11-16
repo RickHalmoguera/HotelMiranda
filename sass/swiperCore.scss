@@ -63,9 +63,23 @@
         line-height: 2.4rem;
     }
 
-    &__bullets{
-        --swiper-pagination-color:#BEAD8E;
+    &__button{
+        width: 3.2rem;
+        height: 3.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3rem;
+        --swiper-navigation-size: 1.2rem;
     }
 
+    &__button--next{
+        background-color: $bg__color--medium;
+        color: $font__color--text-light;
+    }
+
+    &__button--prev{
+        background-color:$bg__color--light;
+    }
 }
 
