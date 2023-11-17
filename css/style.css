@@ -897,6 +897,7 @@
   max-height: 30rem;
 }
 .footer__li {
+  list-style: none;
   color: #777;
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;

@@ -69,6 +69,7 @@
     }
 
     &__li{
+        list-style: none;
         color: $font__color--text-medium;
         font-family: $font__family--extra;
         font-size: 1.6rem;
