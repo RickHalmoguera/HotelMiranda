@@ -1,4 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap");
+.topContainer {
+  background-color: #222;
+}
+.topContainer__p {
+  padding: 0.5em 0;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .topContainer {
+    height: 100px;
+    padding: 1.1rem 0;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 1420px;
+    transform: translateX(-50%);
+  }
+  .topContainer__p {
+    display: block;
+  }
+}
 .header {
   position: relative;
 }
@@ -16,6 +46,9 @@
   flex-direction: column;
   gap: 1em;
 }
+.header__ul--desktop {
+  display: none;
+}
 .header__li {
   color: #111;
   font-family: "Archivo", sans-serif;
@@ -31,6 +64,18 @@
   color: #111;
 }
 
+@media only screen and (min-width: 1000px) {
+  .header {
+    z-index: 8;
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+  }
+  .header__ul--desktop {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .nav {
   background-color: #FFF;
   padding: 2em;
@@ -58,14 +103,19 @@
   color: #111;
 }
 
+@media only screen and (min-width: 1000px) {
+  .nav #menuBtn {
+    display: none;
+  }
+}
 .logo {
   display: flex;
   gap: 1em;
   align-items: center;
 }
 .logo__square {
-  width: 8rem;
-  height: 8rem;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +130,7 @@
 .logo__span {
   text-transform: uppercase;
   font-family: "Archivo", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 700;
   line-height: 4.3rem;
@@ -88,7 +138,7 @@
 .logo__text {
   color: #111;
   font-family: "Archivo", sans-serif;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-style: normal;
   line-height: normal;
   letter-spacing: 2.6px;

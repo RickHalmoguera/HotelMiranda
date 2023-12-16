@@ -15,6 +15,9 @@
   flex-direction: column;
   gap: 1em;
 }
+.header__ul--desktop {
+  display: none;
+}
 .header__li {
   color: #111;
   font-family: "Archivo", sans-serif;
@@ -28,4 +31,17 @@
 }
 .header__a:visited {
   color: #111;
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    z-index: 8;
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+  }
+  .header__ul--desktop {
+    display: flex;
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=header.css.map */
