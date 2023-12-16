@@ -23,6 +23,11 @@
         z-index: -1; 
     }
 
+    &__btnContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
     &__h2{
         font-family: $font__family--main;
         font-size: 1.3rem;
@@ -69,6 +74,18 @@
 
         &:visited{
             color:$font__color--text-darkest
+        }
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    .sectionHero{
+        padding: 8em 13%;
+        background-position: center 70%;
+
+        &__btnContainer{
+            flex-direction: row;
         }
     }
 }

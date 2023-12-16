@@ -20,6 +20,11 @@
   height: 100%;
   z-index: -1;
 }
+.sectionHero__btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
 .sectionHero__h2 {
   font-family: "Archivo", sans-serif;
   font-size: 1.3rem;
@@ -61,4 +66,14 @@
 }
 .sectionHero__a:visited {
   color: #111;
+}
+
+@media only screen and (min-width: 1000px) {
+  .sectionHero {
+    padding: 8em 13%;
+    background-position: center 70%;
+  }
+  .sectionHero__btnContainer {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=sectionHero.css.map */

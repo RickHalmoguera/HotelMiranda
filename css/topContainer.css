@@ -17,12 +17,7 @@
     height: 100px;
     padding: 1.1rem 0;
     z-index: 9;
-    position: absolute;
-    top: 0;
-    left: 50%;
     width: 100%;
-    max-width: 1420px;
-    transform: translateX(-50%);
   }
   .topContainer__p {
     display: block;
