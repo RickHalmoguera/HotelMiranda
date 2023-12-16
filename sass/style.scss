@@ -5,8 +5,8 @@
 @import "./nav.scss";
 @import "./logo.scss";
 @import "./sectionHero.scss";
-@import "./calendarSection.scss";
-@import "./aboutSection.scss";
+@import "./sectionCalendar.scss";
+@import "./sectionAbout.scss";
 @import "./sectionRoom.scss";
 @import "./videoSection.scss";
 @import "./sectionFacilities.scss";
@@ -33,7 +33,7 @@
 @import "./sectionContactForm.scss";
 
 html{
-    font-size: 10px;
+    font-size: 10px; 
 }
   
 * { 
