@@ -22,12 +22,18 @@ const handleMenu = () =>{
 
 const swiperCore = new Swiper(".swiperCore", {
   slidesPerView: 1,
+  centeredSlides: true,
   spaceBetween: 30,
   loop:true,
   navigation: {
     nextEl: '.swiperCore__button--next',
     prevEl: '.swiperCore__button--prev',
   },
+  breakpoints:{
+    1000:{
+      slidesPerView: 3
+    }
+  }
   
   
 })

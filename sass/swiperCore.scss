@@ -1,21 +1,13 @@
 @import "./variables.scss";
 
  .swiperCore{
-    max-width: 37rem;
     
     width: 100%;
-
     &__wrapper{
-        
         width: 100%;
-        max-width: 40rem;
-        height: 30rem;
-        
     }
 
-    &__slide{
-        width: 100%;
-    }
+    
 
     &__span{
         color: rgba(34, 34, 34, 0.04);
@@ -70,6 +62,17 @@
 
     &__button--prev{
         background-color:$bg__color--light;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    .swiperCore{
+        max-width: 1920px;
+        overflow-x: hidden;
+        &__slide{
+           height: 100px;
+        }
     }
 }
 

@@ -1,13 +1,7 @@
 .swiperCore {
-  max-width: 37rem;
   width: 100%;
 }
 .swiperCore__wrapper {
-  width: 100%;
-  max-width: 40rem;
-  height: 30rem;
-}
-.swiperCore__slide {
   width: 100%;
 }
 .swiperCore__span {
@@ -57,4 +51,14 @@
 }
 .swiperCore__button--prev {
   background-color: #FFF;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swiperCore {
+    max-width: 1920px;
+    overflow-x: hidden;
+  }
+  .swiperCore__slide {
+    height: 100px;
+  }
 }/*# sourceMappingURL=swiperCore.css.map */

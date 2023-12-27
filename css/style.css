@@ -434,7 +434,7 @@
   flex-direction: column;
   gap: 3em;
   align-items: center;
-  padding: 8em 0 0 0;
+  padding: 8em 0;
   text-align: center;
 }
 .sectionRoom__h2 {
@@ -488,6 +488,7 @@
 .sectionRoom__swiperTop {
   z-index: 3;
   width: 70%;
+  max-width: 350px;
   background-color: #FFF;
   display: flex;
   justify-content: space-between;
@@ -497,7 +498,7 @@
 .sectionRoom__swiperBottom {
   margin-top: -5.5rem;
   z-index: 3;
-  width: 70%;
+  width: 90%;
   background-color: #FFF;
   display: flex;
   flex-direction: column;
@@ -506,6 +507,14 @@
   padding: 2em;
 }
 
+@media only screen and (min-width: 1000px) {
+  .sectionRoom__swiperBottom {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    max-width: 30%;
+  }
+}
 .button {
   width: 21rem;
   height: 6rem;
@@ -658,15 +667,9 @@
 }
 
 .swiperCore {
-  max-width: 37rem;
   width: 100%;
 }
 .swiperCore__wrapper {
-  width: 100%;
-  max-width: 40rem;
-  height: 30rem;
-}
-.swiperCore__slide {
   width: 100%;
 }
 .swiperCore__span {
@@ -718,6 +721,15 @@
   background-color: #FFF;
 }
 
+@media only screen and (min-width: 1000px) {
+  .swiperCore {
+    max-width: 1920px;
+    overflow-x: hidden;
+  }
+  .swiperCore__slide {
+    height: 100px;
+  }
+}
 .swiperPagination {
   display: flex;
   flex-direction: column;
