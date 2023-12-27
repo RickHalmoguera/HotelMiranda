@@ -20,7 +20,9 @@
 
 .sectionCalendar {
   background-color: #222;
-  padding: 4em 1em;
+  padding: 2em 1em;
+}
+.sectionCalendar__container {
   display: flex;
   flex-direction: column;
   gap: 3em;
@@ -51,9 +53,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
-  .sectionCalendar {
-    padding: 4em 13%;
+  .sectionCalendar__container {
     flex-direction: row;
+    max-width: 1420px;
+    margin: 0 auto;
   }
   .sectionCalendar__inputContainer {
     max-width: 330px;

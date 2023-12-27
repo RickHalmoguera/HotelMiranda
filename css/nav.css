@@ -26,6 +26,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .nav {
+    max-width: 1420px;
+    margin: 0 auto;
+  }
   .nav #menuBtn {
     display: none;
   }

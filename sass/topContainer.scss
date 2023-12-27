@@ -2,9 +2,11 @@
 
 .topContainer{
     background-color: $bg__color--dark;
-    
-    
+    margin: 0 auto;
+    max-width: 1420px;
     &__p{
+       
+        
         padding: .5em 0;
         color: $font__color--text-light;
         font-family: $font__family--extra;
@@ -26,7 +28,7 @@
        
         &__p{
             display: block;
-
+            margin: 0 auto;
         }
     }
 }

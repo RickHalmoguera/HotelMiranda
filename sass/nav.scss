@@ -2,6 +2,7 @@
 
 .nav{
     background-color: $bg__color--light;
+    
     padding: 2em;
     display: flex;
     align-items: center;
@@ -34,7 +35,8 @@
 
 @media only screen and (min-width:1000px) {
     .nav{
-        
+        max-width: 1420px;
+        margin: 0 auto;
         #menuBtn{
             display: none;
         }

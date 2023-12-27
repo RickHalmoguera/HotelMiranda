@@ -1,5 +1,7 @@
 .topContainer {
   background-color: #222;
+  margin: 0 auto;
+  max-width: 1420px;
 }
 .topContainer__p {
   padding: 0.5em 0;
@@ -21,5 +23,6 @@
   }
   .topContainer__p {
     display: block;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=topContainer.css.map */

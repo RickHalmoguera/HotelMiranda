@@ -92,6 +92,8 @@
 @media only screen and (min-width:1000px) {
 
     .sectionRoom{
+        max-width: 1420px;
+        margin: 0 auto;
         &__swiperBottom{
             flex-direction: row;
             align-items: center;

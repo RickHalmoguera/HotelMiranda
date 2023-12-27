@@ -3,10 +3,14 @@
 
 .sectionCalendar{
     background-color: $bg__color--dark;
-    padding: 4em 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
+    padding: 2em 1em ;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+
+    }
 
     &__inputContainer{
         width: 100%;
@@ -38,8 +42,13 @@
 
 @media only screen and (min-width:1000px) {
     .sectionCalendar{
-        padding: 4em 13%;
-        flex-direction: row;
+        
+        &__container{
+            flex-direction: row;
+            max-width: 1420px;
+            margin: 0 auto;
+            
+        }
 
         &__inputContainer{
             max-width:330px ;

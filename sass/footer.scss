@@ -1,9 +1,9 @@
 @import "./variables.scss";
 
 .footer{
+    background-image: url("../images/footerBg.png");
     
     &__inner{
-        background-image: url("../images/footerBg.png");
         padding: 8em 1em 0em 1em;
         display: flex;
         flex-direction: column;
@@ -11,6 +11,7 @@
     }
 
     &__section{
+       
         display: flex;
         flex-direction: column;
         gap: 2em;
@@ -110,12 +111,42 @@
         }
     }
 
-    &__bottom{
+    &__container{
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         gap: 1em;
         padding: 2em;
+    }
+
+    &__bottom{
         background: $bg__color--mediumLight;
     }
     
+}
+
+@media only screen and (min-width:1000px) {
+    .footer{
+        background-image: url("../images/footerBg.png");
+        
+        &__inner{
+            max-width: 1420px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 2em;
+        }
+        &__section{
+            max-width: 370px;
+        }     
+
+        &__container{
+            max-width: 1420px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+          
+    }
+
 }
