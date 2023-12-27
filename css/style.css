@@ -634,10 +634,12 @@
 }
 
 .sectionMenu {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2em;
   padding: 5em 1em 5em 1em;
+  max-width: 1420px;
   overflow-x: hidden;
 }
 .sectionMenu__h2 {
@@ -668,6 +670,14 @@
   justify-content: flex-end;
 }
 
+@media only screen and (min-width: 1000px) {
+  .sectionMenu__img {
+    margin-left: 0px;
+  }
+  .sectionMenu__controls {
+    display: none;
+  }
+}
 .button {
   width: 21rem;
   height: 6rem;
@@ -753,6 +763,7 @@
   }
 }
 .swiperPagination {
+  max-width: 1420px;
   width: 100%;
 }
 .swiperPagination--dark {
@@ -822,26 +833,29 @@
 
 .swiperColumn {
   align-self: center;
-  max-width: 37rem;
+  max-width: 370px;
 }
 .swiperColumn__wrapper {
   width: 100%;
 }
 .swiperColumn__img {
-  width: 12rem;
-  height: 12rem;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   object-position: center center;
 }
 .swiperColumn__slide {
   overflow: hidden;
-  height: 12rem;
+  height: 120px;
   display: flex;
   gap: 2em;
   align-items: center;
 }
 .swiperColumn__slide:hover {
   background-color: #222;
+}
+.swiperColumn__slide:hover .swiperColumn__p, .swiperColumn__slide:hover .swiperColumn__h3 {
+  color: #FFF;
 }
 .swiperColumn__text {
   max-width: 20rem;
@@ -884,6 +898,11 @@
   background-color: #FFF;
 }
 
+@media only screen and (min-width: 1000px) {
+  .swiperColumn {
+    max-width: 100%;
+  }
+}
 .swiperFlex {
   display: flex;
   flex-direction: column;

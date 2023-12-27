@@ -1,25 +1,28 @@
 .swiperColumn {
   align-self: center;
-  max-width: 37rem;
+  max-width: 370px;
 }
 .swiperColumn__wrapper {
   width: 100%;
 }
 .swiperColumn__img {
-  width: 12rem;
-  height: 12rem;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   object-position: center center;
 }
 .swiperColumn__slide {
   overflow: hidden;
-  height: 12rem;
+  height: 120px;
   display: flex;
   gap: 2em;
   align-items: center;
 }
 .swiperColumn__slide:hover {
   background-color: #222;
+}
+.swiperColumn__slide:hover .swiperColumn__p, .swiperColumn__slide:hover .swiperColumn__h3 {
+  color: #FFF;
 }
 .swiperColumn__text {
   max-width: 20rem;
@@ -60,4 +63,10 @@
 }
 .swiperColumn__button--prev {
   background-color: #FFF;
+}
+
+@media only screen and (min-width: 1000px) {
+  .swiperColumn {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=swiperColumn.css.map */

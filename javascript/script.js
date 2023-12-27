@@ -121,6 +121,12 @@ const swiperColumn = new Swiper(".swiperColumn",{
     fill:"row",
     rows:3,
   },
+  breakpoints:{
+    1000:{
+      slidesPerView: 2,
+    
+    },
+  },
   navigation: {
     nextEl: '.swiperColumn__button--next',
     prevEl: '.swiperColumn__button--prev',

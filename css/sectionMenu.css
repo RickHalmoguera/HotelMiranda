@@ -1,8 +1,10 @@
 .sectionMenu {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2em;
   padding: 5em 1em 5em 1em;
+  max-width: 1420px;
   overflow-x: hidden;
 }
 .sectionMenu__h2 {
@@ -31,4 +33,13 @@
   display: flex;
   gap: 3em;
   justify-content: flex-end;
+}
+
+@media only screen and (min-width: 1000px) {
+  .sectionMenu__img {
+    margin-left: 0px;
+  }
+  .sectionMenu__controls {
+    display: none;
+  }
 }/*# sourceMappingURL=sectionMenu.css.map */

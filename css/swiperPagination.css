@@ -1,4 +1,5 @@
 .swiperPagination {
+  max-width: 1420px;
   width: 100%;
 }
 .swiperPagination--dark {
