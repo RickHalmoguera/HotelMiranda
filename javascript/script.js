@@ -57,13 +57,19 @@ const swiperPaginationGrid = new Swiper(".swiperPagination",{
   slidesPerView:1,
   spaceBetween: 30,
   loop: true,
+ 
   breakpoints:{
-    750:{
+
+    1000:{
       
-      slidesPerView: 2,
+      slidesPerView:3, 
+      grid:{
+        fill:"row",
+        rows:2,
+      },
     }
-    
   },
+
 
   pagination:{
     el:".swiperPagination__bullets",
