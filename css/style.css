@@ -1339,6 +1339,7 @@
 }
 
 .sectionRoomList {
+  padding: 8em 1em;
   width: 100%;
   display: grid;
   flex-direction: column;
