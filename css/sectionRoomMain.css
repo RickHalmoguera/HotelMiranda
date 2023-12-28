@@ -1,10 +1,12 @@
 .sectionRoomMain {
+  max-width: 1420px;
+  margin: 0 auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3em;
   align-items: left;
-  padding: 8em 1em 4em 1em;
+  padding: 16em 1em 4em 1em;
 }
 .sectionRoomMain__h2 {
   color: #777;
@@ -19,7 +21,7 @@
 .sectionRoomMain__h1 {
   color: #111;
   font-family: "Old Standard TT", serif;
-  font-size: 4rem;
+  font-size: 4.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: 4.8rem;
@@ -42,7 +44,6 @@
 }
 .sectionRoomMain__img {
   width: 100%;
-  height: 27rem;
   object-fit: cover;
   object-position: center center;
 }
@@ -97,4 +98,29 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media only screen and (min-width: 1000px) {
+  .sectionRoomMain {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .sectionRoomMain__flex {
+    width: 55%;
+    background-color: #FFF;
+    padding: 2em;
+    position: absolute;
+    top: 8em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+  .sectionRoomMain__img {
+    max-width: 60%;
+  }
+  .sectionRoomMain__inputsContainer {
+    width: 370px;
+    padding: 0 1em;
+  }
 }/*# sourceMappingURL=sectionRoomMain.css.map */

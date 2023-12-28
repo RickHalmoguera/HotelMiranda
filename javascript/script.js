@@ -48,7 +48,7 @@ const swiperCore2Slide = new Swiper(".swiperCore2Slide", {
   },
   breakpoints:{
     1000:{
-      slidesPerView: 3
+      slidesPerView: 2
     }
   }
 })
