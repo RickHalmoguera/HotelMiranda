@@ -12,6 +12,7 @@
   height: 270px;
 }
 .sectionHotelDescription__restaurant {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 2em;
