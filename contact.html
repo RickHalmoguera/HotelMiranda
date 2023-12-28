@@ -9,22 +9,32 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-             <img src="./icons/Menu.svg" alt="Menu" class="nav__icon" id="menuBtn">
-             <div class="nav__logo logo">
-                 <div class="logo__square logo__square--light">
-                      <span class="logo__span">h</span>
-                 </div>
-                 <div class="logo__text">
-                     <p class="logo__p--bold">hotel</p>
-                     <p class="logo__p--regular">miranda</p>
-                 </div>
-             </div>
-             <div class="nav__iconContainer">
-                 <img src="./icons/user.svg" alt="user" class="nav__icon">
-                 <img src="./icons/search.svg" alt="search" class="nav__icon">
-             </div>
-        </nav>
+        <div class="header__topContainer topContainer">
+            <p class="topContainer__p">We Make Your Feel Comfortable</p>
+        
+            <nav class="nav">
+                <img src="./icons/Menu.svg" alt="Menu" class="nav__icon" id="menuBtn">
+                <div class="nav__logo logo">
+                    <div class="logo__square logo__square--light">
+                        <span class="logo__span">h</span>
+                    </div>
+                    <div class="logo__text">
+                        <p class="logo__p--bold">hotel</p>
+                        <p class="logo__p--regular">miranda</p>
+                    </div>
+                </div>
+                <ul class=" header__ul header__ul--desktop">
+                    <li class="header__li"><a href="./about.html" class="header__a">About Us</a></li>
+                    <li class="header__li"><a href="./rooms.html" class="header__a">Rooms</a></li>
+                    <li class="header__li"><a href="./offers.html" class="header__a">Offers</a></li>
+                    <li class="header__li"><a href="./contact.html" class="header__a">Contact</a></li>
+                </ul>
+                <div class="nav__iconContainer">
+                    <img src="./icons/user.svg" alt="user" class="nav__icon">
+                    <img src="./icons/search.svg" alt="search" class="nav__icon">
+                </div>
+            </nav>
+        </div>
         <div class="header__dropMenu" id="dropMenu">
             <ul class="header__ul">
                 <li class="header__li"><a href="./about.html" class="header__a">About Us</a></li>
