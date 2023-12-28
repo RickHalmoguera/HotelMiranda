@@ -9,22 +9,32 @@
  </head>
  <body>
     <header class="header">
-        <nav class="nav">
-             <img src="./icons/Menu.svg" alt="Menu" class="nav__icon" id="menuBtn">
-             <div class="nav__logo logo">
-                 <div class="logo__square logo__square--light">
-                      <span class="logo__span">h</span>
-                 </div>
-                 <div class="logo__text">
-                     <p class="logo__p--bold">hotel</p>
-                     <p class="logo__p--regular">miranda</p>
-                 </div>
-             </div>
-             <div class="nav__iconContainer">
-                 <img src="./icons/user.svg" alt="user" class="nav__icon">
-                 <img src="./icons/search.svg" alt="search" class="nav__icon">
-             </div>
-        </nav>
+        <div class="header__topContainer topContainer">
+            <p class="topContainer__p">We Make Your Feel Comfortable</p>
+        
+            <nav class="nav">
+                <img src="./icons/Menu.svg" alt="Menu" class="nav__icon" id="menuBtn">
+                <div class="nav__logo logo">
+                    <div class="logo__square logo__square--light">
+                        <span class="logo__span">h</span>
+                    </div>
+                    <div class="logo__text">
+                        <p class="logo__p--bold">hotel</p>
+                        <p class="logo__p--regular">miranda</p>
+                    </div>
+                </div>
+                <ul class=" header__ul header__ul--desktop">
+                    <li class="header__li"><a href="./about.html" class="header__a">About Us</a></li>
+                    <li class="header__li"><a href="./rooms.html" class="header__a">Rooms</a></li>
+                    <li class="header__li"><a href="./offers.html" class="header__a">Offers</a></li>
+                    <li class="header__li"><a href="./contact.html" class="header__a">Contact</a></li>
+                </ul>
+                <div class="nav__iconContainer">
+                    <img src="./icons/user.svg" alt="user" class="nav__icon">
+                    <img src="./icons/search.svg" alt="search" class="nav__icon">
+                </div>
+            </nav>
+        </div>
         <div class="header__dropMenu" id="dropMenu">
             <ul class="header__ul">
                 <li class="header__li"><a href="./about.html" class="header__a">About Us</a></li>
@@ -35,10 +45,13 @@
         </div>
     </header>
     <section class="sectionHero">
-        <h2 class="sectionHero__h2">the ultimate luxury experience</h2>
-        <h1 class="sectionHero__h1">About Us</h1>
-        <div class="sectionHero__links">
-            <p class="sectionHero__p"><a href="./index.html" class="sectionHero__a">Home</a> | About </p>
+        <div class="sectionHero__container">
+            <h2 class="sectionHero__h2">the ultimate luxury experience</h2>
+            <h1 class="sectionHero__h1">About Us</h1>
+            <div class="sectionHero__links">
+                <p class="sectionHero__p"><a href="./index.html" class="sectionHero__a">Home</a> | About </p>
+            </div>
+
         </div>
     </section>
     <section class="sectionHotelDescription">
@@ -77,13 +90,16 @@
 
         <div class="sectionHotelDescription__restaurant">
             <img src="./images/restaurant.jpg" alt="" class="sectionHotelDescription__img">
-            <h2 class="sectionHotelDescription__h2">restaurant</h2>
-            <h1 class="sectionHotelDescription__h1 sectionHotelDescription__h1--left">Get Restaurant Facilities & Many Other More</h1>
-            <p class="sectionHotelDescription__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por 
-                incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-            </p>
-            <button class="button button--dark">take a tour</button>
+            <div class="restaurant__container">
+                <h2 class="sectionHotelDescription__h2">restaurant</h2>
+                <h1 class="sectionHotelDescription__h1 sectionHotelDescription__h1--left">Get Restaurant Facilities & Many Other More</h1>
+                <p class="sectionHotelDescription__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por 
+                    incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+                <button class="button button--dark">take a tour</button>
+
+            </div>
         </div>
     </section>
 
