@@ -1,6 +1,8 @@
 @import "./variables.scss";
 
 .sectionPopularList{
+    margin: 0 auto;
+    max-width: 1420px;
     background-color: $bg__color--dark;
     padding:4em;
     display: flex;

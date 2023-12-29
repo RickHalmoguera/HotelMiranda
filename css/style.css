@@ -1807,6 +1807,8 @@
   }
 }
 .sectionPopularList {
+  margin: 0 auto;
+  max-width: 1420px;
   background-color: #222;
   padding: 4em;
   display: flex;
