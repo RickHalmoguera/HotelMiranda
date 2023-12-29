@@ -4,6 +4,16 @@
   flex-direction: column;
   gap: 2em;
 }
+.sectionContactForm__topGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.sectionContactForm__group {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
 .sectionContactForm__input {
   height: 6.7rem;
   background-color: #F8F8F8;
@@ -33,4 +43,18 @@
   position: absolute;
   top: 1em;
   left: 1em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .sectionContactForm {
+    margin: 0 auto;
+    max-width: 1420px;
+  }
+  .sectionContactForm__topGroup {
+    width: 100%;
+    flex-direction: row;
+  }
+  .sectionContactForm__group {
+    width: 100%;
+  }
 }/*# sourceMappingURL=sectionContactForm.css.map */

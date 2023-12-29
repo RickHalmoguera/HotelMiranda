@@ -7,6 +7,18 @@
     
     gap: 2em;
 
+    &__topGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    &__group{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
     &__input{
         height: 6.7rem;
         background-color: $bg__color--mediumLight;
@@ -40,6 +52,22 @@
             position: absolute;
             top: 1em;
             left: 1em;
+        }
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    .sectionContactForm{
+        margin: 0 auto;
+        max-width: 1420px;
+        &__topGroup{
+            width: 100%;
+            flex-direction: row;
+        }
+
+        &__group{
+            width: 100%;
         }
     }
 }

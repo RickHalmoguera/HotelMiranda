@@ -42,4 +42,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media only screen and (min-width: 1000px) {
+  .sectionContactInfo {
+    margin: 0 auto;
+    max-width: 1420px;
+    display: flex;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=sectionContactInfo.css.map */

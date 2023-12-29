@@ -45,10 +45,13 @@
         </div>
     </header>
     <section class="sectionHero">
-        <h2 class="sectionHero__h2">the ultimate luxury experience</h2>
-        <h1 class="sectionHero__h1">New Details</h1>
-        <div class="sectionHero__links">
-            <p class="sectionHero__p"><a href="./index.html" class="sectionHero__a">Home</a> | Blog </p>
+        <div class="sectionHero__container">
+            <h2 class="sectionHero__h2">the ultimate luxury experience</h2>
+            <h1 class="sectionHero__h1">Contact</h1>
+            <div class="sectionHero__links">
+                <p class="sectionHero__p"><a href="./index.html" class="sectionHero__a">Home</a> | Contact</p>
+            </div>
+
         </div>
     </section>
 
@@ -81,21 +84,31 @@
 
     
     <form action="" class="sectionContactForm">
-        <div class="sectionContactForm__container">
-            <img src="./icons/userSmall.svg" alt="" class="sectionContactForm__img">
-            <input  class="sectionContactForm__input" type="text" placeholder="Your full name">
-        </div>
-        <div class="sectionContactForm__container">
-            <img src="./icons/phoneSmall.svg" alt="" class="sectionContactForm__img">
-            <input  class="sectionContactForm__input" type="text" placeholder="Add phone number">
-        </div>
-        <div class="sectionContactForm__container">
-            <img src="./icons/mailSmall.svg" alt="" class="sectionContactForm__img">
-            <input  class="sectionContactForm__input" type="email" placeholder="Enter email address">
-        </div>
-        <div class="sectionContactForm__container">
-            <img src="./icons/copySmall.svg" alt="" class="sectionContactForm__img">
-            <input  class="sectionContactForm__input" type="text" placeholder="Enter subject">
+        <div class="sectionContactForm__topGroup">
+            <div class="sectionContactForm__group">
+                <div class="sectionContactForm__container">
+                    <img src="./icons/userSmall.svg" alt="" class="sectionContactForm__img">
+                    <input  class="sectionContactForm__input" type="text" placeholder="Your full name">
+                </div>
+                <div class="sectionContactForm__container">
+                    <img src="./icons/phoneSmall.svg" alt="" class="sectionContactForm__img">
+                    <input  class="sectionContactForm__input" type="text" placeholder="Add phone number">
+                </div>
+    
+            </div>
+    
+            <div class="sectionContactForm__group">
+                <div class="sectionContactForm__container">
+                    <img src="./icons/mailSmall.svg" alt="" class="sectionContactForm__img">
+                    <input  class="sectionContactForm__input" type="email" placeholder="Enter email address">
+                </div>
+                <div class="sectionContactForm__container">
+                    <img src="./icons/copySmall.svg" alt="" class="sectionContactForm__img">
+                    <input  class="sectionContactForm__input" type="text" placeholder="Enter subject">
+                </div>
+    
+            </div>
+        
         </div>
         <div class="sectionContactForm__container">
             <img src="./icons/penSmall.svg" alt="" class="sectionContactForm__img--top">
@@ -103,14 +116,13 @@
         </div>
         <input type="submit" value="send" class="button button--dark sectionContactForm__input--center ">
     </form>
-    
     <footer class="footer">
         <div class="footer__inner">
                 
             <div class="footer__section">
                 <div class="logo">
                     <div class="logo__square logo__square--highlight">
-                            <span class="logo__span logo__span--light">h</span>
+                         <span class="logo__span logo__span--light">h</span>
                     </div>
                     <div class="logo__text">
                         <p class="logo__p--bold">hotel</p>
@@ -118,7 +130,7 @@
                     </div>
                 </div>
         
-                <p class="footer__p"> 
+                <p class="footer__p">
                     Lorem ipsum dolor sit amet, consect etur adipisicing elit, 
                     sed doing eius mod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco 
@@ -136,7 +148,7 @@
             <div class="footer__section">
                 <h3 class="footer__h3">Services.</h3>
                 <ul class="footer__ul">
-                    <li class="footer__li">+ Restaurant & Bar</li> 
+                    <li class="footer__li">+ Restaurant & Bar</li>
                     <li class="footer__li">+ Swimming Pool</li>
                     <li class="footer__li">+ Wellness & Spa</li>
                     <li class="footer__li">+ Restaurant</li>
@@ -150,6 +162,7 @@
             </div>
             
             <div class="footer__section">
+                
                 <h3 class="footer__h3">Contact Us.</h3>
                 <div class="footer__card">
                     <img src="./icons//phone.svg" alt="" class="footer__img">
@@ -173,12 +186,15 @@
                     </div>
                 </div>
             </div>
-            <div class="footer__bottom">
-                    <p class="footer__p--bold">Copyright By@Example - 2020</p>
-                    <p class="footer__p--bold">Terms of use|Privacy Environmental Policy</p>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__container">
+                <p class="footer__p--bold">Copyright By@Example - 2020</p>
+                <p class="footer__p--bold">Terms of use|Privacy Environmental Policy</p>
             </div>
         </div>
     </footer>
+
 </body>
 <script src="https://kit.fontawesome.com/c45d098780.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
