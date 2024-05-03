@@ -7,7 +7,7 @@
 
 <div align="center">
   <h3>
-    <a href="rickhalmoguera.github.io/HotelMiranda/">
+    <a href="https://rickhalmoguera.github.io/HotelMiranda/">
       Demo
     </a>
      <span> | </span>
